@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+	"$model" 1
+	"$basetexture" "models/L12_door_crystal/L12_crystal"
+	"$bumpmap" "models/L12_door_crystal/L12_crystal_normal"
+	"$envmap" "env_cubemap"
+	"$surfaceprop" "glass"
+//	"$translucent" 1
+	"$alphatest" 1
+	
+//	"$normalmapalphaenvmapmask" 1
+//	"$nocull" 1
+
+//	"$envmapcontrast" 1
+//	"$envmapsaturation" 1
+	"$envmaptint" "[0.9 0.9 0.9]"
+
+}

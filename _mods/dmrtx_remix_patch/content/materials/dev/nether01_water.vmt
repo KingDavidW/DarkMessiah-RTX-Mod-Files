@@ -1,0 +1,19 @@
+"LightmappedGeneric"
+{
+	"$envmap" "environment maps/nether_01a"
+	"$basetexture" "nature/water002a"
+	"%compilewater" 1
+	"$watertimefreq1" 0.50
+	"$watertimefreq2" 0.62
+	"$waterwaveheight" 0.60
+	"$waterwavelength" 256
+	"$waterdepth" 8
+	"$waterspecularmin" 0.25
+	"$waterspecularmax" 0.40
+	"$watercolor" "[ 0.00 0.00 0.00 ]"
+	"$watermurkiness" 0.80
+	"$waterbasefactor" 0.70
+	"$waterbasemovementdist" 0.01
+	"$waterbasemovementfreq" 5
+	"$surfaceprop" "water"
+}

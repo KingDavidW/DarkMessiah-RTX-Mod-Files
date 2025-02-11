@@ -1,0 +1,133 @@
+"vertexlitgeneric"
+
+
+{
+	"$basetexture" "FX/Lightning_bolt/LB_skin_warrior_" 
+	"$model" 1
+	
+	"$SEPARATEALPHATEXTURE" "FX/Lightning_bolt/LB_skin_warrior_"
+	
+	"$bumpmap" "FX/Lightning_bolt/LB_skin_warrior_normal"
+
+	
+	"$additive" 1
+		
+	"$translucent" 1
+
+	
+
+	"vertexlitgeneric_HDR_dx9"
+	{
+					
+		"Proxies"
+			{
+		"Sine"
+		{
+			"resultVar" "$selfillumtint[0]"
+			"sineperiod" 3
+			"sinemin" .4
+
+			"sinemax" 1
+		}
+		"Sine"
+		{
+			"resultVar" "$selfillumtint[1]"
+			"sineperiod" 3
+			"sinemin" .5
+
+			"sinemax" 1
+		}
+		"Sine"
+		{
+			"resultVar" "$selfillumtint[2]"
+			"sineperiod" 3
+			"sinemin" .7
+
+			"sinemax" 1
+		}
+
+			"sine"
+				{
+					"sineperiod" 1.3
+					"sinemin" .9
+					"sinemax" 1
+					"resultvar" "$alpha"
+				}
+			"AnimatedTexture"
+	
+				{
+					"animatedtexturevar" "$basetexture"
+					"animatedtextureframenumvar" "$frame"
+					"animatedtextureframerate" 25.00
+				}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$SEPARATEALPHATEXTURE"
+			"animatedtextureframenumvar" "$separatealphaframe"
+			"animatedtextureframerate" 25.00
+		}
+
+			}
+		
+		
+		
+		
+	}
+
+
+	"Proxies"
+	{
+
+	
+
+
+
+	"AnimatedTexture"
+		{
+			"animatedtexturevar" "$baseTexture"	
+			"animatedtextureframenumvar" "$frame"
+			"animatedtextureframerate" 25.00
+		}
+	"AnimatedTexture"
+		{
+			"animatedtexturevar" "$SEPARATEALPHATEXTURE"
+			"animatedtextureframenumvar" "$separatealphaframe"
+			"animatedtextureframerate" 25.00
+		}
+	
+
+		
+	"Sine"
+		{
+			"resultVar" "$alpha"
+			"sineperiod" .037
+			"sinemin" 1
+			"sinemax" 1
+		}
+	"Sine"
+		{
+			"resultVar" "$selfillumtint[0]"
+			"sineperiod" .1
+			"sinemin" 1
+			"sinemax" 1
+		}
+
+	"Sine"
+		{
+			"resultVar" "$selfillumtint[1]"
+			"sineperiod" .1
+			"sinemin" 1
+			"sinemax" 1
+		}
+
+	"Sine"
+		{
+			"resultVar" "$selfillumtint[2]"
+			"sineperiod" .1
+			"sinemin" 1
+			"sinemax" 1
+		}		
+	
+	}
+
+}

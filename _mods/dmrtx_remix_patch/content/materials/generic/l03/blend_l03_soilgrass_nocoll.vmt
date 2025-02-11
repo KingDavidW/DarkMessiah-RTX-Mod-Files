@@ -1,0 +1,24 @@
+"WorldVertexTransition"
+{
+	"$basetexture" "Generic/L03/L03_soil_a"
+	"$basetexture2" "generic/L01/L01_grass_01"
+
+	"%tooltexture" "generic/L03/blend_L03_soilgrass"
+	"%compilenonsolid" 1
+
+	"$bumpmap" "Generic/L03/L03_soil_a_normal"
+	"$bumpmap2" "Generic/L03/L03_grass_01_normal"
+
+	"%detailtype" "Green_grass"
+ 
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+
+	"lightmappedgeneric_HDR_dx9"
+		{
+                      "$envmaptint" "[.4 .4 .4]"
+		}
+		
+	"$surfaceprop" "Dirt"
+	"$surfaceprop2" "Grass"
+}

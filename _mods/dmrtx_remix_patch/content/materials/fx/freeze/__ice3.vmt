@@ -1,0 +1,62 @@
+"VertexlitGeneric"
+{
+ 	"$model" 1
+	
+	
+ 	"$refractamount" ".25"
+ 	"$bluramount" "1"
+	//"$REFRACTTINT" "[180 210 255]"
+	"$scale" "[1 1]"
+	"$dudvmap" "FX/Freeze/water_dudv"
+ 	"$normalmap" "FX/Freeze/water_normal"
+ 	"$surfaceprop" "water"
+	"$dudvframe" "0"
+	"$bumpframe" "0"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[1 1 1]"
+
+	"$baseTexture" "FX/Freeze/ice2"
+
+	"Proxies"
+	{
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$refracttinttexture"
+			"animatedtextureframenumvar" "$bumpframe"
+			"animatedtextureframerate" 30.00
+		}
+
+	}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

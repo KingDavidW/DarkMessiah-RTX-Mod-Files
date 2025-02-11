@@ -1,0 +1,44 @@
+"vertexlitgeneric"
+{
+
+
+	"$basetexture" "FX/Shrink/SH_skin_warrior_"
+	"$model" 1
+
+	"$SEPARATEALPHATEXTURE" "FX/Shrink/SH_skin_warrior_"
+
+	"$additive" 1
+	
+	"$translucent" 1
+	
+	"$vertexcolor" 1
+	"$vertexalpha" 1
+		
+	"Proxies"
+	{
+
+
+	"sine"
+		{
+			"sineperiod" 1
+			"sinemin" .85
+						"sinemax" 1
+			"resultvar" "$alpha"
+		}
+	"AnimatedTexture"
+	
+		{
+			"animatedtexturevar" "$basetexture"
+			"animatedtextureframenumvar" "$frame"
+			"animatedtextureframerate" 25.00
+		}
+	"AnimatedTexture"
+		{
+			"animatedtexturevar" "$SEPARATEALPHATEXTURE"
+			"animatedtextureframenumvar" "$separatealphaframe"
+			"animatedtextureframerate" 25.00
+		}
+
+	}
+
+}

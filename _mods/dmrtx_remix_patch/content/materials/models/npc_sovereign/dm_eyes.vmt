@@ -1,0 +1,28 @@
+"VertexLitGeneric"
+{
+	
+	"$baseTexture"	"models/Npc_Sovereign/DM_eyes"
+	"$surfaceprop" "flesh"
+	
+
+
+	
+
+
+	"$Freezefxenvmap" "FX/Freeze/freeze_env_cubemap"
+	"$Freezefxenvmapmask" "FX/Freeze/Freeze_envmapmask"
+	"$Freezemaptint" "[0.5 0.5 0.5]"
+	"$Freezefxmap" "models/Npc_Guard/guard_freezegradient"
+
+	"vertexlitgeneric_HDR_dx9"
+
+	{
+
+               "$envmaptint" "[.5 .5 .5]"
+               	"$Freezefxenvmap" "FX/Freeze/fz_npc_cubemap_hdr_"
+               "$Freezefxenvmaptint" "[1 1 1]"
+
+	}
+
+
+}

@@ -1,0 +1,130 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "FX/FlameArrow/FA_skin_warrior" 
+	"$SEPARATEALPHATEXTURE" "FX/FlameArrow/FA_skin_warrior"
+	"$bumpmap" "FX/FlameArrow/FA_skin_warrior_normal"
+	"$model" 1
+	
+	
+
+	"$texscale" 	"[4 0]"
+	"$rotate"	"[4 0]"	
+
+
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 1
+	"$envmapsaturation" 1
+	"$envmaptint" "[1 1 1]"
+
+	"$additive" 1
+
+	"$envmap" "FX/Freeze/env_Iceglove_hdr_"
+	"$translucent" 1
+
+	
+
+	"Proxies"
+	{
+	
+	"Sine"
+		{
+			"resultVar" "$color[0]"
+			"sineperiod" .37
+			"sinemin" 1
+			"sinemax" 1
+		}
+
+
+	"Sine"
+		{
+			"resultVar" "$color[1]"
+			"sineperiod" .37
+			"sinemin" 1
+			"sinemax" 1
+		}
+
+	"Sine"
+		{
+			"resultVar" "$color[2]"
+			"sineperiod" .37
+			"sinemin" 1
+			"sinemax" 1
+		}
+	"sine"
+		{
+			"sineperiod" .63
+			"sinemin" 1
+			"sinemax" 1
+			"resultvar" "$alpha"
+		}
+	"Sine"
+		{
+			"resultVar" "$envmaptint[0]"
+			"sineperiod" .37
+			"sinemin" 1
+			"sinemax" 1
+		}	
+		
+
+	
+	"Sine"
+		{
+			"resultVar" "$envmaptint[1]"
+			"sineperiod" .37
+			"sinemin" .2
+			"sinemax" .3
+		}	
+
+
+	
+	"Sine"
+		{
+			"resultVar" "$envmaptint[2]"
+			"sineperiod" .37
+			"sinemin" 0
+			"sinemax" .1
+		}	
+
+	
+	"Sine"
+		{
+			"resultVar" "$envmapsaturation"
+			"sineperiod" .37
+			"sinemin" 1
+			"sinemax" 1
+		}
+	"Sine"
+		{
+			"resultVar" "$envmapcontrast"
+			"sineperiod" .37
+			"sinemin" 0.5
+			"sinemax" .5
+		}
+
+	"Sine"
+		{
+			"resultVar" "$texscale"
+			"sineperiod" .1
+			"sinemin" .994
+			"sinemax" 1
+		}
+		
+	"Sine"
+		{
+			"resultVar" "$rotate"
+			"sineperiod" .23
+			"sinemin" -0.12
+			"sinemax" 0.12
+		}
+
+		"Texturetransform"
+	
+		{
+			"scalevar" "$texscale"
+			"rotatevar" "$rotate"
+			"resultvar" "$basetexturetransform"
+		}
+			
+	}
+
+}

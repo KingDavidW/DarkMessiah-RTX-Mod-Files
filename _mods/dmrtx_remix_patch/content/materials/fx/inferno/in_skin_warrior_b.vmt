@@ -1,0 +1,117 @@
+"vertexlitgeneric"
+
+{
+
+
+
+	"$basetexture" "FX/inferno/in_skin_warrior_B_"
+	"$model" 1
+	"$SEPARATEALPHATEXTURE" "FX/inferno/in_skin_warrior_B_"
+
+	"$vertexcolor" 1
+	"$vertexalpha" 1
+	
+	"$texscale" 	"[4 0]"
+	"$rotate"	"[4 0]"	
+
+	"$additive" 1
+	"$translucent" 1
+	
+	
+
+	"Proxies"
+	{
+	
+	"Sine"
+		{
+			"resultVar" "$color[0]"
+			"sineperiod" .37
+			"sinemin" .8
+			"sinemax" 1
+		}
+
+
+	"Sine"
+		{
+			"resultVar" "$color[1]"
+			"sineperiod" .37
+			"sinemin" .8
+			"sinemax" 1
+		}
+
+	"Sine"
+		{
+			"resultVar" "$color[2]"
+			"sineperiod" .37
+			"sinemin" .8
+			"sinemax" 1
+		}
+	"sine"
+		{
+			"sineperiod" .63
+			"sinemin" .8
+			"sinemax" 1
+			"resultvar" "$alpha"
+		}
+	"Sine"
+		{
+			"resultVar" "$envmaptint[0]"
+			"sineperiod" .37
+			"sinemin" 1
+			"sinemax" 1.5
+		}	
+			
+	"Sine"
+		{
+			"resultVar" "$envmapsaturation"
+			"sineperiod" .37
+			"sinemin" 1
+			"sinemax" 1.2
+		}
+	"Sine"
+		{
+			"resultVar" "$envmapcontrast"
+			"sineperiod" .37
+			"sinemin" -1
+			"sinemax" 1
+		}
+
+	"Sine"
+		{
+			"resultVar" "$texscale"
+			"sineperiod" .1
+			"sinemin" .994
+			"sinemax" 1
+		}
+		
+	"Sine"
+		{
+			"resultVar" "$rotate"
+			"sineperiod" .23
+			"sinemin" -0.12
+			"sinemax" 0.12
+		}
+
+		"Texturetransform"
+	
+		{
+			"scalevar" "$texscale"
+			"rotatevar" "$rotate"
+			"resultvar" "$basetexturetransform"
+		}
+		"AnimatedTexture"
+	
+		{
+			"animatedtexturevar" "$basetexture"
+			"animatedtextureframenumvar" "$frame"
+			"animatedtextureframerate" 25.00
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$SEPARATEALPHATEXTURE"
+			"animatedtextureframenumvar" "$separatealphaframe"
+			"animatedtextureframerate" 25.00
+		}
+	}
+
+}

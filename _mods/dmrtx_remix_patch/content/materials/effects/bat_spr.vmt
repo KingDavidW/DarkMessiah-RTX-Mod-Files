@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+	"$vertexcolor" 1
+	"$basetexture" "effects/bat"
+//	"$alphatest" 1
+	"$translucent" 1
+	"$nocull" 1
+}

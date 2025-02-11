@@ -1,0 +1,23 @@
+"WorldVertexTransition"
+{
+	"$basetexture" "generic/l12/l12_sandstone_01"
+	"$basetexture2" "generic/l09/l09_dripstone_up"
+
+	"%tooltexture" "generic/l12/blend_l12_sandstonedripstone"
+	"%keywords" "L12"
+	"$surfaceprop" "stone"
+	"$surfaceprop2" "concrete"
+
+	"$bumpmap" "generic/l12/l12_sandstone_01_normal"
+	"$bumpmap2" "generic/l09/l09_dripstone_up_normal"
+
+	"$normalmapalphaenvmapmask" 1
+	"$envmap" "env_cubemap"
+
+	"lightmappedgeneric_HDR_dx9"   
+		{
+		"$envmaptint" "[.4 .4 .4]"   
+		}
+}
+
+

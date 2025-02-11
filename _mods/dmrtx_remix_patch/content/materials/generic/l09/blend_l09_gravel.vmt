@@ -1,0 +1,22 @@
+"WorldVertexTransition"
+//"WorldVertexTransition"
+{
+	"$basetexture" "Generic/L09/L09_gravel_a"
+	"$basetexture2" "Generic/L09/L09_gravel_b"
+
+	"%tooltexture" "Generic/L09/blend_L09_gravel"
+	"$surfaceprop" "Dirt"
+	"%keywords" "L09"
+
+	"$bumpmap" "Generic/L09/L09_gravel_a_normal"
+	"$bumpmap2" "Generic/L09/L09_gravel_b_normal"
+
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+
+	"lightmappedgeneric_HDR_dx9"
+	{
+        	//"$envmaptint" "[.4 .4 .4]"
+	"$envmaptint" "[.35 .33 .3]"
+	}
+}

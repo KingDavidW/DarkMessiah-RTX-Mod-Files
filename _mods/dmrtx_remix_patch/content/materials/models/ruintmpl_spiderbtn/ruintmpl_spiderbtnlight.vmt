@@ -1,0 +1,23 @@
+"VertexLitGeneric"
+{
+	
+	"$baseTexture"	"models/RuinTmpl_SpiderBtn/RuinTmpl_SpiderBtnLight"
+	"$surfaceprop" "concrete"
+	"$bumpmap" "models/RuinTmpl_SpiderBtn/RuinTmpl_SpiderBtn_normal"
+
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 0.5
+	"$envmapsaturation" 1
+	"$envmaptint" "[0.6 0.6 0.6]"
+
+	"$envmap" "env_cubemap"
+	
+
+	"vertexlitgeneric_HDR_dx9"
+
+		{
+
+                        "$envmaptint" "[.2 .2 .2]"
+
+		}
+}

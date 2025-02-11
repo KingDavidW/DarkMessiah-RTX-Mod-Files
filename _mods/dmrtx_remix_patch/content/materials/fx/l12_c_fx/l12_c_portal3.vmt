@@ -1,0 +1,107 @@
+
+"vertexlitgeneric"
+{
+	"$basetexture" "FX/Magicreflection/MR_bg_"
+	"$SEPARATEALPHATEXTURE" "FX/L12_C_FX/L12_C_portal_alpha3"
+	"$model" 1
+	
+
+	"$translucent" 1
+	
+	"$additive" 1
+	
+
+	"$translate" "[0 0]"
+	"$rotate" 1
+	"$scale" .25
+
+	"$vertexcolor" "1"
+	"$vertexalpha" "1"
+	
+	"Proxies"
+
+	{
+	
+	"AnimatedTexture"
+	
+		{
+			"animatedtexturevar" "$basetexture"
+			"animatedtextureframenumvar" "$frame"
+			"animatedtextureframerate" 35.00
+		}
+		
+	"linearramp"
+		{
+			"rate"	-.4
+			"resultVar"	"$translate[1]"
+		}
+		
+	"Sine"
+		{
+			"sineperiod"	6.5
+			"sinemin"	".4"
+			"sinemax"	"-.4"
+			"resultVar"	"$translate[0]"
+		}
+	
+	"Sine"
+		{
+			"sineperiod"	5.3
+			"sinemin"	"1"
+			"sinemax"	".9"
+			"resultVar"	"$alpha"
+		}
+		
+	"Sine"
+		{
+			"sineperiod"	6.5
+			"sinemin"	"1"
+			"sinemax"	".9"
+			"resultVar"	"$scale"
+		}
+
+	"Sine"
+		{
+			"sineperiod"	15
+			"sinemin"	"-60"
+			"sinemax"	"80"
+			"resultVar"	"$rotate"
+		}
+	
+	"texturetransform"
+		{
+			"rotatevar"	"$rotate"		
+			"scalevar" 	"$scale"
+			"resultvar" 	"$basetexturetransform"		
+		}
+		
+	"Sine"
+		{
+			"sineperiod"	5
+			"sinemin"	"1"
+			"sinemax"	"1"
+			"resultVar"	"$color[0]"
+		}
+		
+	"Sine"
+		{
+			"sineperiod"	5
+			"sinemin"	".5"
+			"sinemax"	"1"
+			"resultVar"	"$color[1]"
+		}
+		
+	"Sine"
+		{
+			"sineperiod"	5
+			"sinemin"	".2"
+			"sinemax"	".5"
+			"resultVar"	"$color[2]"
+		}
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$baseTexture"	"Generic/L02/L02_window_day"
+	"$bumpmap" "Generic/L02/L02_window_day_normal"
+	"$surfaceprop" "glass"
+}

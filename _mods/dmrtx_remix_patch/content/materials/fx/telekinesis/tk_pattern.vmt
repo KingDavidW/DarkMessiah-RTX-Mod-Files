@@ -1,0 +1,58 @@
+"VertexLitGeneric"
+{
+	
+	"$baseTexture"	"FX/Telekinesis/TK_Pattern_"
+	//"$surfaceprop" "flesh"
+	
+	"$SEPARATEALPHATEXTURE" "FX/Telekinesis/TK_Pattern_"
+
+	//"$baseTexture"	"FX/telekinesis/TK_skin_warrior_"
+	//"$SEPARATEALPHATEXTURE" "FX/telekinesis/TK_skin_warrior_"
+
+	"$additive" 1
+
+	//"$bumpmap" "FX/Stoneskin/StonePattern_normal"
+
+	//"$normalmapalphaenvmapmask" 1
+
+	//"$envmaptint" "[1.5 1.5 1.5]"
+	//"$envmap" "env_cubemap"
+	//"$translucent" "1"
+
+	"$vertexcolor" 1
+	"$vertexalpha" 1
+
+	
+
+	"$texscale" 6
+
+	"$translucent" 1	
+
+	"Proxies"
+	{
+
+	"TextureTransform"
+		{
+			"scaleVar"	"$texscale"
+			
+			"resultVar"	"$basetexturetransform"
+		}
+
+	"AnimatedTexture"
+		{
+			"animatedtexturevar" "$baseTexture"	
+			"animatedtextureframenumvar" "$frame"
+			"animatedtextureframerate" 25.00
+		}
+
+	"AnimatedTexture"
+		{
+			"animatedtexturevar" "$SEPARATEALPHATEXTURE"
+			"animatedtextureframenumvar" "$separatealphaframe"
+			"animatedtextureframerate" 25.00
+		}
+
+
+
+	}
+}

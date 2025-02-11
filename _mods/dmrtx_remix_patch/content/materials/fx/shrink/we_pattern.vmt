@@ -1,0 +1,55 @@
+"VertexLitGeneric"
+{
+	
+	"$baseTexture"	"FX/shrink/we_pattern_"
+	
+	"$SEPARATEALPHATEXTURE" "FX/shrink/we_pattern_"
+
+
+
+	"$additive" 1
+
+	"$vertexcolor" 1
+	"$vertexalpha" 1
+
+	
+
+	"$texscale" 6
+
+	"$translucent" 1	
+
+	"Proxies"
+	{
+
+	"TextureTransform"
+		{
+			"scaleVar"	"$texscale"
+			
+			"resultVar"	"$basetexturetransform"
+		}
+
+	"AnimatedTexture"
+		{
+			"animatedtexturevar" "$baseTexture"	
+			"animatedtextureframenumvar" "$frame"
+			"animatedtextureframerate" 25.00
+		}
+
+	"AnimatedTexture"
+		{
+			"animatedtexturevar" "$SEPARATEALPHATEXTURE"
+			"animatedtextureframenumvar" "$separatealphaframe"
+			"animatedtextureframerate" 25.00
+		}
+	"sine"
+		{
+		"sineperiod"	.5
+		"resultvar"	"$alpha"
+		"sinemin"	1
+		"sinemax" 	1
+		
+		}
+
+
+	}
+}

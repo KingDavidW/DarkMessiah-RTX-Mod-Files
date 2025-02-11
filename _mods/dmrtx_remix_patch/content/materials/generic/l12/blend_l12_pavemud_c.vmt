@@ -1,0 +1,21 @@
+"WorldVertexTransition"
+{
+	"$basetexture" "generic/l12/l12_pavestone_metal"
+	"$basetexture2" "generic/l08/l08_ground_mud"
+
+	"%tooltexture" "generic/l12/blend_l12_pavemud_c"
+	"%keywords" "L12"
+	"$surfaceprop" "stone"
+	"$surfaceprop2" "mud"
+
+	"$bumpmap" "generic/l12/l12_pavestone_metal_normal"
+	"$bumpmap2" "generic/l00/l00_ground_mud_normal"
+
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+
+	 "lightmappedgeneric_HDR_dx9"
+		{
+	        "$envmaptint" "[.4 .4 .4]"   
+		}
+}

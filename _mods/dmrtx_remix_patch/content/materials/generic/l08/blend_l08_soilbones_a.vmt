@@ -1,0 +1,21 @@
+"WorldVertexTransition"
+{
+	"$basetexture" "generic/l08/l08_soil"
+	"$basetexture2" "generic/l08/l08_ground_bones"
+	
+	"%tooltexture" "generic/l08/blend_l08_soilbones_a"
+	
+	"$surfaceprop" "Dirt"
+	"%keywords" "l08"
+
+	"$bumpmap" "generic/l08/l08_soil_normal"
+	"$bumpmap2""generic/l08/l08_ground_bones_normal"
+
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+
+	 "lightmappedgeneric_HDR_dx9"   
+	{
+		"$envmaptint" "[.4 .4 .4]"   
+	}
+}

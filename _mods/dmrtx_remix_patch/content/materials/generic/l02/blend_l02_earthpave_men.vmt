@@ -1,0 +1,22 @@
+"WorldVertexTransition"
+{
+	"$basetexture" "Generic/L02/L02_pavestone_men"
+	"$basetexture2" "Generic/L02/L02_earth"
+
+	"%tooltexture" "generic/L02/blend_l02_earthpave_men"
+	"%keywords" "L02"
+
+	"$bumpmap" "Generic/L02/L02_pavestone_men_normal"
+	"$bumpmap2" "Generic/L02/L02_earth_normal"
+
+	"$surfaceprop" "Stone"
+	"$surfaceprop2" "Dirt"
+
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	
+	"lightmappedgeneric_HDR_dx9"
+	{
+        	"$envmaptint" "[.3 .3 .3]"
+	}
+}

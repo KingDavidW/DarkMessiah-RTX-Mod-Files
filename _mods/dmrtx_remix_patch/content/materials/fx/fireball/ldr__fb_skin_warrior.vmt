@@ -1,0 +1,147 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "FX/Firetrap/FT_skin_warrior_" 
+	"$model" 1
+	"$SEPARATEALPHATEXTURE" "FX/Firetrap/FT_skin_warrior_normal"
+
+	"$bumpmap" "FX/Fireball/FB_skin_warrior_normal"
+
+	"$texscale" 	"[4 0]"
+	"$rotate"	"[4 0]"	
+	"$translate"	"[0 0]"
+	"$center"	"[4 0]"
+
+	
+	"basetexturealphaenvmapmask" 1
+	//"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 1
+	"$envmapsaturation" 1.5
+	"$envmaptint" "[2 0 0]"
+	"$additive" 1
+	
+	"$envmap" "FX/Freeze/env_Iceglove"
+	"$translucent" 1
+
+	
+
+	"Proxies"
+	{
+	"AnimatedTexture"
+		{
+			"animatedtexturevar" "$baseTexture"	
+			"animatedtextureframenumvar" "$frame"
+			"animatedtextureframerate" 30.00
+		}
+	"linearramp"
+		
+		{
+			"resultvar" "$rotate"
+			"rate" 0
+			
+		}
+
+	
+	"Sine"
+		{
+			"resultVar" "$color[0]"
+			"sineperiod" .37
+			"sinemin" 1
+			"sinemax" 2
+		}
+
+
+	"Sine"
+		{
+			"resultVar" "$color[1]"
+			"sineperiod" .37
+			"sinemin" 1
+			"sinemax" 1
+		}
+
+	"Sine"
+		{
+			"resultVar" "$color[2]"
+			"sineperiod" .37
+			"sinemin" 1
+			"sinemax" 1
+		}
+	"sine"
+		{
+			"sineperiod" .63
+			"sinemin" 1
+			"sinemax" 1
+			"resultvar" "$alpha"
+		}
+	"Sine"
+		{
+			"resultVar" "$envmaptint[0]"
+			"sineperiod" .37
+			"sinemin" 1		
+			"sinemax" 2
+		}	
+			
+	"Sine"
+		{
+			"resultVar" "$envmaptint[1]"
+			"sineperiod" .37
+			"sinemin" 00		
+			"sinemax" 00
+		}	
+
+	"Sine"
+		{
+			"resultVar" "$envmaptint[2]"
+			"sineperiod" .37
+			"sinemin" 0.0		
+			"sinemax" 0.0
+		}
+
+
+
+
+	"Sine"
+		{
+			"resultVar" "$envmapsaturation"
+			"sineperiod" .37
+			"sinemin" 1
+			"sinemax" 1
+		}
+	"Sine"
+		{
+			"resultVar" "$envmapcontrast"
+			"sineperiod" .37
+			"sinemin" 1
+			"sinemax" 1
+		}
+
+	"Sine"
+		{
+			"resultVar" "$texscale"
+			"sineperiod" 15
+			"sinemin" 1
+			"sinemax" 1
+
+		}
+		
+	"Sine"
+		{
+			"resultVar" "$center"
+			"sineperiod" .1
+			"sinemin" .5
+			"sinemax" .5
+		}
+
+		"Texturetransform"
+	
+		{
+			"centervar" "$center"
+			"translatevar" "$translate"
+			"scalevar" "$texscale"
+			"rotatevar" "$rotate"
+			"resultvar" "$basetexturetransform"
+		
+		}
+			
+	}
+
+}

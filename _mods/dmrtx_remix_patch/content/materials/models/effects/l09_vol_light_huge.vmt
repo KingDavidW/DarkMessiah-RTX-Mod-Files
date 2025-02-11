@@ -1,0 +1,37 @@
+"UnlitGeneric"
+//"VertexlitGeneric"
+{
+	"$baseTexture" "Models/Effects/vol_light001"
+//	"$baseTexture" "tools\toolsnodraw"
+	"$SEPARATEALPHATEXTURE" "Models\Effects\vl_gradiant"
+//	"$SEPARATEALPHATEXTURE" "FX\FlameArrow\FA_skin_warrior_alpha"
+
+	
+
+	"$nocull" "1"	
+	"$additive" "1"
+	"$translucent" "1"
+	"$model" "1"
+	"$no_fullbright" 1
+
+//	"$alphatest" "1"
+
+
+
+	"Proxies"
+	{
+
+		"TextureScroll"
+		{
+			"texturescrollvar" "$basetexturetransform"
+			"texturescrollrate" .04
+			"texturescrollangle" -90
+		}
+
+
+	}
+
+
+
+}
+

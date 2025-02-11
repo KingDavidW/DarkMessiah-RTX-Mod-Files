@@ -1,0 +1,11 @@
+"WorldVertexTransition"
+{
+	"$basetexture" "generic/l11/l11_illum_a"
+	"$basetexture2" "generic/l11/l11_illum_b"
+
+	
+
+	"%tooltexture" "generic/l11/blend_l11_windowillum"
+	"$surfaceprop" "glass"
+	"%keywords" "L11"
+}

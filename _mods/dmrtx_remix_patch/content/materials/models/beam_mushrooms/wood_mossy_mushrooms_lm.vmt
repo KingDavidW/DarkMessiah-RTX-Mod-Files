@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	
+	"$baseTexture"	"models/beam_mushrooms/Wood_mossy_mushrooms"
+	"$surfaceprop" "wood"
+	
+	"%keywords" "c17skyscraper"
+
+}

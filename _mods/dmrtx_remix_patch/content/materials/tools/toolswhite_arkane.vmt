@@ -1,0 +1,9 @@
+"UnLitGeneric"
+{
+	// Original shader: BaseTimesLightmap
+	"$basetexture" "Tools/toolswhite"
+	"%keywords" "tools,white,geno"
+	
+	//"$surfaceprop" "glass"
+	"$reflectivity" "[0 0 0]"
+}

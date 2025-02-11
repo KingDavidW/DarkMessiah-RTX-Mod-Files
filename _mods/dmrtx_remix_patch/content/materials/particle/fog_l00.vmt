@@ -1,0 +1,9 @@
+"Sprite"
+{
+	"$basetexture" "particle/fog_L00"
+	"$vertexcolor" "1"
+	"$vertexalpha" "1"
+	"$translucent" "1"
+	"$spriteRenderMode" "1"
+	"$additive" "1"
+}

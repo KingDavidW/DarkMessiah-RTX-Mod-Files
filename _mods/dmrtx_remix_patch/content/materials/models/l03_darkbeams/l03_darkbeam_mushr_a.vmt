@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$baseTexture"	"models\L03_darkbeams\L03_darkbeam_mushr_a"
+	"$surfaceprop" "wood"
+	"$bumpmap" "models\L03_darkbeams\L03_darkbeam_mushr_normal"
+
+	
+}
+

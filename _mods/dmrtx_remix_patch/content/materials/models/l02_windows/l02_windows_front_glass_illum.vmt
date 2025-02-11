@@ -1,0 +1,13 @@
+"vertexlitgeneric"
+{
+	"$baseTexture"	"models/l02_windows/l02_windows_front_glass_illum"
+	//"$bumpmap" "models/l02_windows/l02_windows_front_glass_illum_normal"
+	"$surfaceprop" "Glass"
+
+	
+	"vertexlitgeneric_HDR_dx9"
+	{
+           "$selfillumtint" "[.25 .25 .25]"     
+
+	}
+}

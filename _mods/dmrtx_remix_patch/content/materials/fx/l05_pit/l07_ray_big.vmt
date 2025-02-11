@@ -1,0 +1,41 @@
+"Unlittwotexture"
+{
+
+	"$basetexture" "FX/L05_pit/L07_ray_diffuse"
+	"$texture2" "FX/L05_pit/L07_ray_mask"
+	"$additive" "1"
+	"$vertexcolor" 1
+	"$vertexalpha" "1"
+	"$nocull" "1"
+	"$nodecal" 1
+	"$model" "1"
+	"$translucent" "1"
+	"$vector" "[1 1]"	
+	
+		
+	"Proxies"
+
+	{
+
+
+		"texturescroll"
+		{
+			"texturescrollvar" "$basetexturetransform"
+			"texturescrollrate" .4
+			"texturescrollangle" -90
+			
+		}
+		"sine"
+		{
+			"resultvar" "$alpha"
+			"sineperiod" ".1"
+			"sinemin" ".28"
+			"sinemax" ".3"
+			
+		}
+
+
+
+	}
+}
+

@@ -1,0 +1,37 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "FX/firetrap/ft_skin_warrior_" 
+	"$model" 1
+	"$SEPARATEALPHATEXTURE" "FX/firetrap/ft_skin_warrior_normal"
+
+	"$bumpmap" "FX/firetrap/ft_skin_warrior_normal"
+
+	"$texscale" 	"[4 0]"
+	"$rotate"	"[4 0]"	
+	
+
+
+	"$additive" 1
+	
+
+
+	"$translucent" 1
+
+	
+
+	"Proxies"
+	{
+	
+
+	"AnimatedTexture"
+		{
+			"animatedtexturevar" "$baseTexture"	
+			"animatedtextureframenumvar" "$frame"
+			"animatedtextureframerate" 25.00
+		}
+
+
+			
+	}
+
+}

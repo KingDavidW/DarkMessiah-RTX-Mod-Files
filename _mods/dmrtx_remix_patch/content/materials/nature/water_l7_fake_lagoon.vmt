@@ -1,0 +1,25 @@
+"LightmappedGeneric"
+{
+	"$envmap" "shadertest/cubemap"
+	"$basetexture" "nature/water_lagoon02" 
+	"$bottommaterial" "dev/dev_waterbeneath"
+	"%compilewater" 1
+	"$watertimefreq1" 0.50
+	"$watertimefreq2" 0.62
+	"$waterwaveheight" 1
+	"$waterwavelength" 256
+	"$waterdepth" 64
+	"$waterspecularmin" 0.25
+	"$waterspecularmax" 1
+	"$watercolor" "[ 0.13 0.16 0.17 ]"
+	"$watermurkiness" 0.85
+	"$waterbasefactor" 1.00
+	"$waterbasemovementdist" 0.01
+	"$waterbasemovementfreq" 20
+	"$surfaceprop" "water"
+	"$fogenable" 1
+	"$fogcolor" "[ 0.30 0.20 0.20 ]"
+	"$fogstart" 1.00
+	"$fogend" 800.00
+	"$subdivsize" 64
+}

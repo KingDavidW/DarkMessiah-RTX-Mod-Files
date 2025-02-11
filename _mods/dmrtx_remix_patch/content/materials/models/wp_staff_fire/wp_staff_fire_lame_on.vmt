@@ -1,0 +1,54 @@
+"VertexLitGeneric"
+{
+	"$model" 1
+	"$baseTexture"	"models\Wp_Staff_Fire\Wp_Staff_Fire_ON"
+	"$surfaceprop" "metal"
+	"$bumpmap" "models\Wp_Staff_Fire\Wp_Staff_Fire_ON_normal"
+
+
+	//"$normalmapalphaenvmapmask" 1
+	//"$envmapcontrast" 0
+
+	//"$envmapsaturation" 1
+	//"$envmaptint" "[2 0 0]"
+
+	//"$envmap" "FX/Envcubemap/env_CBMP"
+
+	
+	"$selfillumtint" "[1 1 1]"
+
+
+	"$nodecal" 1
+
+	"vertexlitgeneric_HDR_dx9"
+
+	{
+
+               "$envmaptint" "[.5 .5 .5]"
+
+	}
+
+	
+
+	"Proxies"
+
+	{
+
+		"sine"
+		{
+			
+			"resultvar" "$selfillumtint"
+			"sineperiod" 1
+			"sinemin" 1
+			"sinemax" 2
+			
+		}
+
+	
+
+
+	}
+
+
+}
+

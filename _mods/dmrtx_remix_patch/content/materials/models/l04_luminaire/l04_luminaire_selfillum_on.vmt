@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+
+{
+	"$model" 1
+	"$basetexture" "models/L04_Luminaire/L04_Luminaire_On"
+	"$bumpmap" "models/L04_Luminaire/L04_Luminaire_normal"
+
+	"$surfaceprop" "glass"
+
+      
+
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1	
+	"$envmapcontrast" 0.9
+	"$envmapsaturation" 1
+	"$envmaptint" "[.8 .8 .8]"
+
+}

@@ -1,0 +1,46 @@
+"VertexLitGeneric"
+{
+	
+	"$baseTexture"	"models/Npc_Xana_demon/S_Xana"
+	"$surfaceprop" "flesh"
+	"$bumpmap" "models/Npc_Xana_demon/S_Xana_normal"
+
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 1
+	"$envmapsaturation" 0.5
+	"$envmaptint" "[0.8 0.8 0.8]"
+
+
+	"$envmap" "env_cubemap"
+	
+	
+	"vertexlitgeneric_HDR_dx9"
+
+	{
+
+               "$envmaptint" "[.5 .5 .5]"
+               
+               "Proxies"
+
+	{
+
+		"sine"
+		{
+			
+			"resultvar" "$selfillumtint"
+			"sineperiod" 2
+			"timeoffset" .3
+			"sinemin" 0.35
+			"sinemax" 0.2
+			
+		}
+
+	
+
+
+	}
+
+	}
+
+
+}

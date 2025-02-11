@@ -1,0 +1,92 @@
+"Vertexlitgeneric"
+{
+	"$basetexture" "models/WP_Sword_Souldrinker/Souldrinker_skin" 
+	"$model" 1
+	"$surfaceprop" "metal"
+	"$bumpmap" "models/WP_Sword_Souldrinker/Souldrinker_normal" 
+	"$nodecal" 1
+
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 0.5
+	"$envmapsaturation" 1
+	"$envmaptint" "[1 1 1]"
+	
+	"$envmap" "env_cubemap"
+	"$selfilumtint" "[1 1 1]"
+
+	
+
+	"vertexlitgeneric_HDR_dx9"
+
+	{
+
+               "$envmaptint" "[.5 .5 .5]"
+
+	}
+
+	
+	"Proxies"
+
+	{
+		"Sine"
+		{
+			"resultVar" "$color[0]"
+			"sineperiod" 3
+			"sinemin" 0
+
+			"sinemax" 1
+		}
+
+
+
+
+		"Sine"
+		{
+			"resultVar" "$color[1]"
+			"sineperiod" 3
+			"sinemin" 0
+
+			"sinemax" 1
+		}
+
+		"Sine"
+		{
+			"resultVar" "$color[2]"
+			"sineperiod" 3
+			"sinemin" 0
+
+			"sinemax" 1
+		}
+
+		"Sine"
+		{
+			"resultVar" "$selfillumtint[0]"
+			"sineperiod" 3
+			"sinemin" 0.1
+
+			"sinemax" 1
+		}
+		"Sine"
+		{
+			"resultVar" "$selfillumtint[1]"
+			"sineperiod" 3
+			"sinemin" 0.1
+
+			"sinemax" 1
+		}
+		"Sine"
+		{
+			"resultVar" "$selfillumtint[2]"
+			"sineperiod" 3
+			"sinemin" 0.1
+
+			"sinemax" 1
+		}
+
+		
+		
+
+	}
+		
+
+}

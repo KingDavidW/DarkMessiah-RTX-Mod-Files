@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$baseTexture"	"Generic/L10/L10_flagstone01_illum"
+	"$surfaceprop" "Stone"
+
+	
+	"%keywords" "L03, L10"
+}

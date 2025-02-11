@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	
+	"$baseTexture"	"models/L09_crystals/crystals"
+	"$surfaceprop" "flesh"
+	"$bumpmap" "models/SpiderEggs/SpiderEggs_normal"
+	"$envmap" "env_cubemap"
+//	"$normalmapalphaenvmapmask" "1"
+	"$envmapcontrast" "0"
+	"$envmapsaturation" "0.2"
+	
+	"$envmaptint" "[1 1 1]"
+
+}

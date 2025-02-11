@@ -1,0 +1,22 @@
+"VertexLitGeneric"
+{
+	"$model" 1
+	"$basetexture" "models/CR_SpiderLight/CR_SpiderLight_skin2"
+	"$bumpmap" "models/CR_SpiderLight/CR_SpiderLight_skin2_normal"
+	"$envmap" "env_cubemap"
+	"$surfaceprop" "metal"
+	"$normalmapalphaenvmapmask" 1
+	
+	"$envmapcontrast" 0.9
+	"$envmapsaturation" 0.8
+	"$envmaptint" "[.7 .7 .7]"
+	
+
+	"vertexlitgeneric_HDR_dx9"
+
+		{
+
+                        "$envmaptint" "[.2 .2 .2]"
+
+		}
+}

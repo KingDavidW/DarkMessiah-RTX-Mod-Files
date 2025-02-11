@@ -1,0 +1,10 @@
+{
+	"name"				    :	"Dark Messiah RTX Patch",
+	"description"		    :	"A patch to make DM work with RTX Remix. Includes texture fixes and character skinning",
+	"author"			    :	"wiltOS Technologies",
+	"website"			    : 	"www.wiltostech.com",
+	"launch_parameters"		:	[ "+developer 0", "-novid", "-dev", "-dxlevel 70", "+mat_dxlevel 70", "+mat_softwarelighting 0", "+sv_cheats 1", "+r_frustumcullworld 0", "+mat_drawwater 0", "+r_portalsopenall 1", "+mat_very_high_texture 1", "+mat_picmip 0", "+mat_colorcorrection 0", "+r_drawdetailprops 1", "+datacachesize 128", "+r_rootlod 0", "+r_lod -1", "+r_modellodscale 0" ],
+    "modules"               :   [ "dmmm_rtx.dll" ],
+	"version"				: 	"A1-02.12",
+	"add_to_path"			: 	true
+}

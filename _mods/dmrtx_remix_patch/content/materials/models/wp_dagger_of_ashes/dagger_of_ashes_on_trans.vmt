@@ -1,0 +1,73 @@
+"VertexLitGeneric"
+{
+	
+	"$baseTexture"	"models\Wp_Dagger_Of_Ashes\Dagger_Of_Ashes_On"
+	"$surfaceprop" "glass"
+	"$bumpmap" "models\Wp_Dagger_Of_Ashes\Dagger_Of_Ashes_Off_normal"
+ 	
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 1
+	"$envmapsaturation" 1
+	"$envmaptint" "[1 1 1]"
+	"$translucent" 1
+	"$envmap" "env_cubemap"
+	"$separatealphatexture" "Models\Wp_Dagger_Of_Ashes\Dagger_Of_Ashes_On_Trans" 
+	
+	"$selfillumtint" "[1 1 1]"
+	"$vertexcolor" 1
+	"$vertexalpha" 1
+
+	"vertexlitgeneric_HDR_dx9"
+
+	{
+
+               "$envmaptint" "[.5 .5 .5]"
+
+	}
+
+
+	"Proxies"
+
+	{
+
+		"Sine"
+		{
+			"resultVar" "$selfillumtint"
+			"sineperiod" 2
+			"sinemin" .4
+
+			"sinemax" 1
+		}
+	
+		"Sine"
+		{
+			"resultVar" "$color[0]"
+			"sineperiod" 2
+			"sinemin" 0
+
+			"sinemax" 1
+		}
+		"Sine"
+		{
+			"resultVar" "$color[1]"
+			"sineperiod" 2
+			"sinemin" .4
+
+			"sinemax" 1
+		}
+
+		"Sine"
+		{
+			"resultVar" "$color[2]"
+			"sineperiod" 2
+			"sinemin" 1
+
+			"sinemax" 1
+		}
+	}
+
+
+
+
+
+}

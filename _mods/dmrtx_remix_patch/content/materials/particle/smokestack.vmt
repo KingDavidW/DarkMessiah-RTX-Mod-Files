@@ -1,0 +1,8 @@
+"Sprite"
+
+{
+	"$bumpmap" "particle/BillowNormalMap"
+	"$basetexture" "particle/SmokeStackFallback"
+	"$spriteRenderMode" "1"
+	"$translucent" "1"
+}
