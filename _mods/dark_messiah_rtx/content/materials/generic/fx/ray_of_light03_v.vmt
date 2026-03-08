@@ -1,0 +1,27 @@
+"UnlitGeneric"
+//"VertexlitGeneric"
+{
+	"$basetexture" "Generic/FX/Ray_of_light03_v"	
+	//"$SEPARATEALPHATEXTURE" "Models\Effects\vl_gradiant"
+
+	"$nocull" "1"	
+	"$additive" "1"
+	"$translucent" "1"
+	"$model" "1"
+	"$no_fullbright" 1
+
+
+//	"Proxies"
+//	{
+//
+//		"TextureScroll"
+//		{
+//			"texturescrollvar" "$basetexturetransform"
+//			"texturescrollrate" .005
+//			"texturescrollangle" -90
+//		}
+//
+//
+//	}
+//	
+}

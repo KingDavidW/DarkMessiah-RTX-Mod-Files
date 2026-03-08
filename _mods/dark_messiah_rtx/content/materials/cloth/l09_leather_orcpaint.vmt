@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	
+	"$baseTexture"	"cloth/L09_leather_orcpaint"
+	"$surfaceprop" "Fabric"
+	"$translucent" 1
+	"$nocull" 1"
+	"$alphatest" "1"
+}

@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	"$basetexture"	"Generic/L01/L01_window_03"
+	"$surfaceprop" "glass"
+	"$bumpmap" "Generic/L01/L01_window_03_normal"
+}

@@ -1,0 +1,98 @@
+"Unlitgeneric"
+{
+	"$model" 1
+ 	"$basetexture" "FX/Magicreflection/MR_bg_"
+	
+	
+	"$texscale" "[5 5]"
+	
+
+	"$min" 100
+	"$max" -100
+	
+	"$additive" 1
+
+
+
+	"Proxies"
+	{
+	
+	"Sine"
+		{
+			"resultVar" "$color[0]"
+			"sineperiod" .2
+			"sinemin" .8
+			"sinemax" 1
+		}
+
+
+	"Sine"
+		{
+			"resultVar" "$color[1]"
+			"sineperiod" .2
+			"sinemin" .1
+			"sinemax" .3
+		}
+
+	"Sine"
+		{
+			"resultVar" "$color[2]"
+			"sineperiod" .1
+			"sinemin" 0
+			"sinemax" 0
+		}
+	"sine"
+		{
+			"sineperiod" .25
+			"sinemin" .8
+			"sinemax" 1
+			"resultvar" "$alpha"
+		}		
+
+	"Linearramp"
+		{
+			"rate" 15
+			"initialvalue" 2
+			"resultvar" "$min"
+		}
+
+	"Linearramp"
+		{
+			"rate" 5
+			"initialvalue" 1
+			"resultvar" "$max"
+		}
+	
+	"sine"
+		{
+			"sineperiod" 2
+			"sinemin" 4
+			"sinemax" 6
+			"resultvar" "$texscale[0]"
+		}
+	
+	"sine"
+		{
+			"sineperiod" 2
+			"sinemin" 6
+			"sinemax" 4
+			"resultvar" "$texscale[1]"
+		}
+	
+	"Texturetransform"
+	
+		{
+			"scalevar" "$texscale"
+			"rotatevar" "$min"
+			"translatevar" "$max"
+			"resultvar" "$basetexturetransform"
+		}
+	
+
+
+	}
+}
+
+
+	
+	

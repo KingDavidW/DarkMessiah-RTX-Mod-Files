@@ -1,7 +1,0 @@
-"LightmappedGeneric"
-{
-	// Original shader: BaseTimesLightmapSelfIllum
-	"$basetexture" "Lights/fluorescentwarm002a"
-	
-	"$surfaceprop" "glass"
-}

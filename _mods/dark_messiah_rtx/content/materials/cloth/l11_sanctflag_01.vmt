@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$baseTexture"	"cloth/l11_sanctflag_01"
+	"$surfaceprop" "fabric"
+	"$translucent" 1
+	"$nocull" 1
+	"%keywords" "L11"
+}

@@ -1,0 +1,14 @@
+"VertexlitGeneric"
+{
+	"$surfaceprop" "glass"
+	"$bluramount" 1
+
+	"$refractamount" ".05"
+	"$normalmap" "generic/l10/l10_stglass_refract_normal"
+
+	//"$REFRACTTINTTEXTURE" "generic/l10/l10_stglass02_refract"
+	//test - recycling of the diffuse instead of adding a new diffuse vtf
+	"$baseTexture" "generic/l10/l10_stglass_diffuse"
+
+	"%keywords" "L10"
+}

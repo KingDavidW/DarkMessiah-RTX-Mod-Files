@@ -1,8 +1,0 @@
-"Sprite"
-{
-	// Original shader: BaseTimesVertexColorAlphaBlend
-	"$translucent" 1
-	"$basetexture" "particle/sparkles"
-	"$vertexcolor" 1
-	"$spriteRenderMode" "1"
-}

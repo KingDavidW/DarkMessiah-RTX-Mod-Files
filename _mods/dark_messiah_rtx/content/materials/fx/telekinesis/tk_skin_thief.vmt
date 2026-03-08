@@ -1,0 +1,30 @@
+"VertexLitGeneric"
+{
+	
+	
+	
+	"$baseTexture"	"FX/telekinesis/tk_skin_warrior_"
+	"$SEPARATEALPHATEXTURE" "FX/telekinesis/tk_skin_warrior_"
+	"$surfaceprop" "flesh"
+	"$nodecal" 1
+	"$translucent" 1
+	
+	"$additive" 1
+
+	
+	"Proxies"
+	{
+	"AnimatedTexture"
+		{
+			"animatedtexturevar" "$baseTexture"	
+			"animatedtextureframenumvar" "$frame"
+			"animatedtextureframerate" 25.00
+		}
+	"AnimatedTexture"
+		{
+			"animatedtexturevar" "$SEPARATEALPHATEXTURE"
+			"animatedtextureframenumvar" "$separatealphaframe"
+			"animatedtextureframerate" 25.00
+		}
+	}
+}

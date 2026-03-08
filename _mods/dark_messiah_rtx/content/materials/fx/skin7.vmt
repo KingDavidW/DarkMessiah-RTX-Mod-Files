@@ -1,0 +1,82 @@
+"UnLitGeneric"
+{
+	
+	//"$baseTexture"	"FX/Telekinesis/TK_Pattern_"
+	
+	"$baseTexture"	"FX/Magicreflection/MR_bg_"
+
+	
+	
+	"$SEPARATEALPHATEXTURE" "FX/Telekinesis/TK_Pattern_"
+	
+	//"$SEPARATEALPHATEXTURE" "FX/L12_C_FX/L12_C_portal_alpha3"
+
+	"$additive" 1
+	"$model" 1
+
+	"$vertexcolor" 1
+	"$vertexalpha" 1
+
+	
+	
+	"$rotate" 1
+	"$texscale" 1
+	"$texscale2" 1
+	"$translucent" 1	
+
+	"Proxies"
+	{
+	
+	"linearramp"
+		{
+			"rate"	0
+			"resultVar"	"$rotate"
+		}
+		
+
+	"Sine"
+		{
+			"sineperiod"	6.5
+			"sinemin"	"1"
+			"sinemax"	"1"
+			"resultVar"	"$texscale"
+		}
+		
+	"Sine"
+		{
+			"sineperiod"	6.5
+			"sinemin"	".3"
+			"sinemax"	".5"
+			"resultVar"	"$texscale2"
+		}
+
+	"TextureTransform"
+		{
+			"scaleVar"	"$texscale"
+			"rotatevar"	"$rotate"
+			"resultVar"	"$basetexturetransform"
+		}
+		
+	"TextureTransform"
+		{
+			"scaleVar"	"$texscale2"
+			
+			"resultVar"	"$SEPARATEALPHATEXTUREtransform"
+		}
+
+	"AnimatedTexture"
+		{
+			"animatedtexturevar" "$baseTexture"	
+			"animatedtextureframenumvar" "$frame"
+			"animatedtextureframerate" 25.00
+		}
+		
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$SEPARATEALPHATEXTURE"
+			"animatedtextureframenumvar" "$separatealphaframe"
+			"animatedtextureframerate" 25.00
+		}
+
+	}
+}

@@ -1,0 +1,20 @@
+"WorldVertexTransition"
+{
+	"$baseTexture"	"generic/l10/l10_flagstone02_blood"
+	"$baseTexture2"	"generic/l10/l10_flagstone02"
+
+	"%tooltexture" "generic/l10/blend_l10_flagstoneblood"
+	"$surfaceprop" "concrete"
+	"%keywords" "L10"
+	
+	"$bumpmap" "generic/l10/l10_flagstone02_normal"
+	"$bumpbasetexture2withbumpmap" "1"
+
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	
+	"lightmappedgeneric_HDR_dx9"
+		{
+                        "$envmaptint" "[.3 .3 .3]"
+		}
+}

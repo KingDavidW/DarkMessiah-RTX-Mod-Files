@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+	"$model" 1
+	"$basetexture" "models/L11_Luminaire/L11_Luminaire"
+	"$bumpmap" "models/L11_Luminaire/L11_Luminaire_normal"
+	"$envmap" "env_cubemap"
+	"$surfaceprop" "metal"
+	"$normalmapalphaenvmapmask" 1
+	
+	"$envmapcontrast" 0.9
+	"$envmapsaturation" 1
+	"$envmaptint" "[.8 .8 .8]"
+
+	
+}

@@ -1,0 +1,27 @@
+"VertexLitGeneric"
+{
+	
+	"$baseTexture"	"models\Wp_Dagger_Of_Ashes\Dagger_Of_Ashes_On"
+	"$surfaceprop" "metal"
+	"$bumpmap" "models\Wp_Dagger_Of_Ashes\Dagger_Of_Ashes_Off_normal"
+
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" .5
+	"$envmapsaturation" 1
+	"$envmaptint" "[2 2 2]"
+	
+
+	"$envmap" "env_cubemap"
+
+	"vertexlitgeneric_HDR_dx9"
+
+	{
+
+               "$envmaptint" "[.5 .5 .5]"
+
+	}
+
+
+
+	
+}

@@ -1,0 +1,29 @@
+"VertexLitGeneric"
+{
+	"$model" 1
+	"$basetexture" "models/L10_portal/portal01_light"
+	"$bumpmap" "models/L10_portal/portal01_light_normal"
+	"$envmap" "env_cubemap"
+	"$surfaceprop" "glass"
+	"$normalmapalphaenvmapmask" 1
+	//"$basealphaenvmapmask" 1
+	"$envmapcontrast" 1
+	"$envmapsaturation" 1
+	"$envmaptint" "[0.8 0.8 0.8]"
+	
+
+ "Proxies"   
+     {   
+            // This is a sine proxy   
+            "Sine"   
+            {   
+                   // This is the data for the sine proxy   
+                   // Notice there is no '$' on the proxy variables   
+                   "resultVar"    "$alpha"   
+                   "sineperiod"   11   
+                   "sinemin"      0.6   
+                   "sinemax"      1   
+            }   
+     } 
+
+}

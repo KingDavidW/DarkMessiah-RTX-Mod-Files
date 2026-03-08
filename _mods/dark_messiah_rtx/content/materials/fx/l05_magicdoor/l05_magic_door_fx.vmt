@@ -1,0 +1,45 @@
+"UnlitGeneric"
+{
+
+	"$basetexture" "FX/L05_magicdoor/L05_magicdoor_FX_02"
+	"$texture2" "FX/L05_magicdoor/L05_magicdoor_FX_02"
+
+	"$nodecal" 1
+	"$model" 1
+	
+	"$vertexcolor" 1
+	"$vertexalpha" 1
+
+	"Proxies"
+
+	{
+		"linearramp"
+		{
+		"rate" 5
+		"initialvalue" 0
+		"resultvar" "$angle01"
+		}
+
+
+		"texturetransform"
+		{
+			"resultvar" "$basetexturetransform"
+			"rotatevar" "$angle01"
+			
+			
+		}
+		"sine"
+		{
+			"resultvar" "$alpha"
+			"sineperiod" "4"
+			"sinemin" "1"
+			"sinemax" "1"
+			
+		}
+
+
+
+	}
+	
+}
+

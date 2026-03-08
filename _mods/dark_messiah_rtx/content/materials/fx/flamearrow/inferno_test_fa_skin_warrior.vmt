@@ -1,0 +1,88 @@
+"vertexlitgeneric"
+
+{
+
+
+	//"$basetexture" "FX/inferno/in_skin_warrior_"
+	//"$model" 1
+	//"$SEPARATEALPHATEXTURE" "FX/inferno/in_skin_warrior_"
+
+	"$basetexture" "FX/inferno/inferno_warrior_skin_A"
+	"$model" 1
+	"$SEPARATEALPHATEXTURE" "FX/inferno/inferno_warrior_skin_A"
+
+	"$additive" 1
+
+	"$vertexcolor" 1
+	"$vertexalpha" 1
+	
+	"$texscale" 	"[4 0]"
+	"$rotate"	"[4 0]"	
+
+	//"$translucent" 1
+	
+	
+
+	"Proxies"
+	{
+	
+	"Sine"
+		{
+			"resultVar" "$color[0]"
+			"sineperiod" .37
+			"sinemin" .8
+			"sinemax" 1
+		}
+
+
+	"Sine"
+		{
+			"resultVar" "$color[1]"
+			"sineperiod" .37
+			"sinemin" .8
+			"sinemax" 1
+		}
+
+	"Sine"
+		{
+			"resultVar" "$color[2]"
+			"sineperiod" .37
+			"sinemin" .8
+			"sinemax" 1
+		}
+	"sine"
+		{
+			"sineperiod" .63
+			"sinemin" .8
+			"sinemax" 1
+			"resultvar" "$alpha"
+		}
+	
+
+	"Sine"
+		{
+			"resultVar" "$texscale"
+			"sineperiod" .1
+			"sinemin" 1
+			"sinemax" 1
+		}
+		
+	"Sine"
+		{
+			"resultVar" "$rotate"
+			"sineperiod" .1
+			"sinemin" -0.05
+			"sinemax" 0.05
+		}
+
+		"Texturetransform"
+	
+		{
+			"scalevar" "$texscale"
+			"rotatevar" "$rotate"
+			"resultvar" "$basetexturetransform"
+		}
+			
+	}
+
+}

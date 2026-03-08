@@ -1,0 +1,7 @@
+"UnlitGeneric"
+{
+	"$surfaceprop" "default_silent_sky"
+	"$basetexture" "skybox/sky_L02_nightrt"
+	"$nofog" 1
+	"$ignorez" 1
+}

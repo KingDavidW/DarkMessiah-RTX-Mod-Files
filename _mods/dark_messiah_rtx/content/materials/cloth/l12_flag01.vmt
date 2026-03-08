@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	
+	"$baseTexture"	"Cloth/L12_flag01"
+	"$surfaceprop" "Fabric"
+	"$translucent" 1
+	"$nocull" 1
+}

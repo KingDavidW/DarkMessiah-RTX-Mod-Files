@@ -1,0 +1,43 @@
+"UnlitGeneric"
+{
+	// Original shader: BaseTextureAlphaBlend
+	"$translucent" 1
+	"$basetexture" "particle/rain"
+
+	"$vertexcolor" 1
+	"$vertexalpha" 1
+
+"Proxies"
+	{
+	
+	"Sine"
+		{
+			"resultVar" "$color[0]"
+			"sineperiod" .37
+			"sinemin" .7
+			"sinemax" .7
+		}
+	"Sine"
+		{
+			"resultVar" "$color[1]"
+			"sineperiod" .37
+			"sinemin" .8
+			"sinemax".8
+		}
+	"Sine"
+		{
+			"resultVar" "$color[2]"
+			"sineperiod" .37
+			"sinemin" 1
+			"sinemax" 1
+		}
+	
+	"Sine"
+		{
+			"resultVar" "$alpha"
+			"sineperiod" 3
+			"sinemin" .6
+			"sinemax" 1
+		}
+	}
+}

@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$baseTexture"	"cloth/l11_pennants_a"
+	"$surfaceprop" "clothes"
+	"$translucent" 1
+	"$nocull" 1"
+	"%keywords" "L11"
+}

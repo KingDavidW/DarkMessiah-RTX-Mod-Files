@@ -6,12 +6,14 @@ wiltOS Dark Messiah Mod Launcher [Download](https://www.moddb.com/games/dark-mes
 
 wiltOS Dark Messiah Advanced SDK Base Module [Download](https://github.com/KingDavidW/DarkMessiah-AdvancedSDK-Mod-Files)
 
-RTX Remix [Download](https://github.com/NVIDIAGameWorks/rtx-remix)
-
 ## How to Install
-Make sure you have the wiltOS Dark Messiah Mod Launcher installed!
+First install the latest Mod Launcher
 
-Simply drag and drop the files from this repository and put them into your Dark Messiah Might and Magic Singleplayer folder.
+Then, install the latest SDK Base into your _mods folder
+
+Finally drag and drop the files from this repository and put them into your Dark Messiah Might and Magic Singleplayer folder.
+
+The content is available in the RELEASES section. Content is extremely large, and is installed the same way as this!
 
 ## Mod Order Requirement
 Make the Advanced SDK the first mod in your list, above everything else.
@@ -34,5 +36,7 @@ Hetman Lerman for making environment art and some props
 Riddick, Granto, and QWERTY for making some assorted props
 
 Stickyfingaz for creating an algorithm for pulling color information from the original textures
+
+Capybara for creating a bunch of models and the remaining environment textures
 
 The ChaiNNer and RTX Discord for helping get the whole thing put together!

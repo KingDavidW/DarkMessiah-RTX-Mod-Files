@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$baseTexture"	"generic/l01/l01_window_illum"
+	"$bumpmap" "generic/l01/l01_window_normal"
+	"$surfaceprop" "glass"
+	"%keywords" "L01"
+}

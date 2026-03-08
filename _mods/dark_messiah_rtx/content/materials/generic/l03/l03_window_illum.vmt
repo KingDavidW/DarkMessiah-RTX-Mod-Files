@@ -1,0 +1,14 @@
+"LightmappedGeneric"
+{
+	"$baseTexture"	"generic/l03/l03_window_illum"
+	"$bumpmap" "generic/l01/l01_window_03_normal"
+	"$surfaceprop" "glass"
+	
+	"%keywords" "L03"
+
+	"lightmappedgeneric_HDR_dx9"
+	{
+           "$selfillumtint" "[.4 .4 .4]"     
+
+	}
+}

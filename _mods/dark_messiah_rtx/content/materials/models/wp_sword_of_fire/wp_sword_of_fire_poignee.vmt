@@ -1,0 +1,66 @@
+"VertexLitGeneric"
+{
+	"$model" 1
+	"$baseTexture"	"models\Wp_Sword_Of_Fire\Wp_Sword_Of_Fire"
+	"$surfaceprop" "metal"
+	"$bumpmap" "models\Wp_Sword_Of_Fire\Wp_Sword_Of_Fire_normal"
+
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 0.5
+
+	"$envmapsaturation" 1
+	"$envmaptint" "[1 .6 .6]"
+
+	"$envmap" "env_cubemap"
+
+	
+	"$selfillumtint" "[1 1 1]"
+
+
+	"$nodecal" 1
+
+	"$T" "[1 1]"
+
+	"vertexlitgeneric_HDR_dx9"
+
+	{
+
+               "$envmaptint" "[.5 .5 .5]"
+
+	}
+
+
+	"Proxies"
+
+	{
+
+		"sine"
+		{
+			
+			"resultvar" "$selfillumtint"
+			"sineperiod" 4
+			"sinemin" .4
+			"sinemax" 2
+			
+		}
+
+		"Linearramp"
+		{
+			"rate" 20
+			"initialvalue" 1
+			"resultvar" "$T"
+		}
+
+		"TextureScroll"
+		{
+			"texturescrollvar" "$bumptransform"
+			"texturescrollrate" .01
+			"texturescrollangle" 0
+		}
+
+
+	}
+
+
+}
+

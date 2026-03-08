@@ -1,0 +1,15 @@
+"Sprite"
+{
+ 	
+ 	"$refractamount" ".03"
+ 	"$bluramount" "1"
+	"$scale" "[1 1]"
+ 	"$dudvmap" "particle/heat_normal"
+ 	"$normalmap" "particle/heat_normal"
+	"$bumpframe" "0"
+	"$ignorez" "1"
+	"$vertexcolor" "1"
+	"$vertexalpha" "1"
+	"$translucent" "1"
+	"$spriteRenderMode" "1"
+}

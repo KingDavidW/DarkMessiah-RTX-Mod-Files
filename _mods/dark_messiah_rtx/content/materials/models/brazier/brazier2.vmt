@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+	
+	"$baseTexture"	"models/brazier/brazier"
+	"$surfaceprop" "stone"
+	"$bumpmap" "models/brazier/brazier_normal"
+	
+
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 1
+	"$envmapsaturation" 1
+
+
+	"$envmap" "env_cubemap"
+
+}

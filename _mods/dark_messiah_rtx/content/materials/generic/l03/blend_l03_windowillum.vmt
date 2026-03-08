@@ -1,0 +1,15 @@
+"WorldVertexTransition"
+{
+	"$basetexture" "generic/L03/L03_illum_a"
+	"$basetexture2" "generic/L03/L03_illum_b"
+
+	
+
+	"%tooltexture" "generic/L03/blend_L03_windowillum"
+	"$surfaceprop" "glass"
+
+	"lightmappedgeneric_HDR_dx9"
+	{
+           "$selfillumtint" "[.6 .6 .6]"     
+	}
+}

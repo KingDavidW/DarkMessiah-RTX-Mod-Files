@@ -1,0 +1,17 @@
+"VertexLitGeneric"
+
+{
+	
+	"$baseTexture"	"Models/L03_Windows/L03_Window_illum_c"
+	"$surfaceprop" "Wood"
+	
+
+	"$bumpmap" "Models/L03_Windows/L03_Window_c_normal"
+
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+
+	"$envmapcontrast" 0
+	"$envmapsaturation" 1
+	//"$envmaptint" "[1 1 1]"
+}

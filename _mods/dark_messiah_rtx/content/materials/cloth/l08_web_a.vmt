@@ -1,0 +1,47 @@
+"VertexLitGeneric"
+{
+	"$baseTexture"	"cloth/L08_web_a"
+	"$surfaceprop" "cloth"
+	"$translucent" 1
+	"$nocull" 1
+
+	"$turn" 1
+	
+	"$center" "[.5 .5]"
+
+
+
+	"Proxies"
+	{
+	
+	"sine"
+		{
+			"sineperiod" 	7
+			"sinemax" 	1
+			"sinemin"	0	
+			"resultvar"	"$turn"
+		}
+	
+	
+			"sine"
+		{
+			"sineperiod" 	20
+			"sinemax" 	2
+			"sinemin"	0	
+			"resultvar"	"$center"
+		}
+	
+
+	"Texturetransform"
+		{
+			"centervar"	"$center"
+			
+			"rotatevar"	"$turn"
+			
+			"resultvar"	"$basetexturetransform"
+		}
+
+	
+	}
+
+}

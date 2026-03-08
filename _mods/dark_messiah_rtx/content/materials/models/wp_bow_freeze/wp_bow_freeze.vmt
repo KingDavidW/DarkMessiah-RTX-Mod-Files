@@ -1,0 +1,58 @@
+"VertexLitGeneric"
+{
+	
+	"$baseTexture"	"models\Wp_Bow_freeze\Wp_Bow_freeze"
+	"$surfaceprop" "glass"
+	"$bumpmap" "models\Wp_Bow_freeze\Wp_Bow_freeze_normal"
+
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 0.1
+
+	"$envmapsaturation" 1
+	//"$envmaptint" "[0.8 0.8 0.8]"
+	
+	"$envmap" "env_cubemap"
+	
+	"$selfillumtint" "[1 1 1]"
+	
+	"$nodecal" 1
+	
+
+	
+		"Proxies"
+	
+		{
+	
+			"sine"
+			{
+				
+				"resultvar" "$selfillumtint"
+				"sineperiod" 3
+				"sinemin" .5
+				"sinemax" 2
+				
+			}
+	
+	
+			"TextureScroll"
+			{
+				"texturescrollvar" "$bumptransform"
+				"texturescrollrate" .01
+				"texturescrollangle" 0
+			}
+	
+	
+		}
+	
+	"vertexlitgeneric_HDR_dx9"
+
+	{
+
+               "$envmaptint" "[.5 .5 .5]"
+
+	}
+	
+	
+
+}
+

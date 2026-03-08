@@ -1,0 +1,18 @@
+"UnlitGeneric"
+{
+	"$basetexture" "models/Alyx/emptool_glow"
+	"$nodecal" "1"
+	"$model" "1"
+	"$additive" "1"
+	"$nocull" "1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar" "$basetexturetransform"
+			"texturescrollrate" 33.3
+			"texturescrollangle" 60
+		}
+	}
+
+}

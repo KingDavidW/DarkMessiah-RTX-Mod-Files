@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/Alyx/emptool_sheet"
+	"$nodecal" "1"
+	"$selfillum" "1"
+}

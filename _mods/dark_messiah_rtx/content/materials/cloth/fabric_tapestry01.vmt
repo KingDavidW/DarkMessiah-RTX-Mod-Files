@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{	
+	"$baseTexture"	"cloth/fabric_tapestry01"
+	"$surfaceprop" "Fabric"
+	"$translucent" 1
+	"$nocull" 1
+}

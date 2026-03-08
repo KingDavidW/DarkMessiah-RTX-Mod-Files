@@ -1,5 +1,0 @@
-"vertexlitgeneric"
-{
-	"$baseTexture"	"models/l02_windows/l02_windows_front_glass_proxy"
-	"$surfaceprop" "Glass"
-}

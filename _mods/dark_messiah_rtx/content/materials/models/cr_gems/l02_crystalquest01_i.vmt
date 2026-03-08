@@ -1,0 +1,35 @@
+"VertexLitGeneric"
+{
+	"$model" 1
+	"$basetexture" "models/CR_Gems/L02_crystalQuest01"
+	"$bumpmap" "models/CR_Gems/L02_crystalQuest01_normal"
+
+	"$surfaceprop" "glass"
+	
+	"$envmap" "env_cubemap"
+	"$envmapcontrast" .5
+	"$envmaptint" "[.6 .5 1]"
+
+//	"$additive" 1
+	
+	
+	"$selfillumtint" "[.2 .2 .3]"
+
+	"$normalmapalphaenvmapmask" 1	
+
+//	"$nocull" 1
+
+	
+	"Proxies"
+		{
+		
+		"Sine"
+			{
+			"sineperiod" 1.5
+			"sinemin" 2
+			"sinemax" 3
+			"resultvar" "$selfillumtint"
+			}
+
+		}
+}

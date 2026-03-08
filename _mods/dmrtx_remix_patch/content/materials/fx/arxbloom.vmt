@@ -1,7 +1,0 @@
-"UnlitGeneric"
-{
-	// Original shader: BaseTexture
-	"$fbtexture" "_rt_FullFrameFB"
-	"$blurtexture" "_rt_SmallFB0"
-	"%noToolTexture" 1
-}

@@ -1,0 +1,20 @@
+"VertexLitGeneric"
+{
+	
+	"$baseTexture"	"models/Crystal02/crystal"
+	"$surfaceprop" "Glass"
+	//"$translucent" 1
+	"$additive" 1
+	//"$temp" "[0 0]"   
+	
+	"$bumpmap" "models/Crystal02/crystal_normal"
+
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 1
+	"$envmapsaturation" 1	
+	"$envmaptint" "[1 1 1]"
+	"$envmap" "env_cubemap"
+
+	//"$translucent" 1
+	"$mostlyopac" 1
+}

@@ -1,0 +1,45 @@
+"VertexLitGeneric"
+{
+	"$baseTexture"	"models/L01_ball/L01_ball"
+	"$surfaceprop" "stone"
+	"$bumpmap" "models/L01_ball/L01_ball_normal"
+	"$envmap" "env_cubemap"
+
+	"$normalmapalphaenvmapmask" 1
+	
+//	"$envmapcontrast" 1
+//	"$envmapsaturation" 1
+	"$envmaptint" "[120 120 120]"
+	
+
+ "Proxies"   
+     {   
+            // This is a sine proxy   
+		"Sine"
+		{
+			"resultVar" "$selfillumtint[0]"
+			"sineperiod" 4
+			"sinemin" 0.2
+		
+
+			"sinemax" 2
+		}
+		"Sine"
+		{
+			"resultVar" "$selfillumtint[1]"
+			"sineperiod" 8
+			"sinemin" 0.0
+
+			"sinemax" 2
+		}
+		"Sine"
+		{
+			"resultVar" "$selfillumtint[2]"
+			"sineperiod" 8
+			"sinemin" 0.0
+
+			"sinemax" 2 
+            }   
+     } 
+
+}

@@ -1,0 +1,9 @@
+"VertexlitGeneric"
+{
+	"$surfaceprop" "glass"
+	"$bluramount" 10
+	"$refractamount" "0.2 "
+
+	"$baseTexture" "generic/l02/l02_windowglass_special_refract"
+	"$normalmap" "generic/l02/l02_windowglass_special_refract_normal"
+}

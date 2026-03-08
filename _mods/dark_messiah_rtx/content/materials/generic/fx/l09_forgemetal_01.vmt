@@ -1,0 +1,25 @@
+"LightMappedGeneric"
+{
+
+	"$basetexture" "Generic/FX/L09_forgemetal_01"
+	//"$selfillum" 1			
+	//"$bumpmap" "Generic/FX/L09_forgemetal_01_normal"
+
+	"$bumpmap" "dev/fus_normal"
+	"$normalmap" "dev/fus_normal"
+
+	
+	"$surfaceprop" "water"
+      
+	"$bumpframe" "0"
+
+	"Proxies"
+            {
+                        "AnimatedTexture"
+                        {
+                                   "animatedtexturevar" "$bumpmap"
+                                   "animatedtextureframenumvar" "$bumpframe"
+                                  "animatedtextureframerate" 15.00
+                        }
+            }
+}

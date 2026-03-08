@@ -1,0 +1,28 @@
+"VertexLitGeneric"
+{
+	
+	"$baseTexture"	"models/Npc_player/player_Xana"
+	"$surfaceprop" "flesh"
+	"$bumpmap" "models/Npc_player/player_Xana_normal"
+
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 0.5
+	"$envmapsaturation" 1
+	"$envmaptint" "[0.8 0.8 0.8]"
+
+
+	"$envmap" "env_cubemap"
+	
+//	"$translucent" "1"
+
+	
+	"vertexlitgeneric_HDR_dx9"
+
+	{
+
+               "$envmaptint" "[.5 .5 .5]"
+
+	}
+
+
+}

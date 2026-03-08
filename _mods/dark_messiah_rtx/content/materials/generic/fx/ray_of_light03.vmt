@@ -1,0 +1,20 @@
+"UnlitGeneric"
+{
+	"$basetexture" "Generic/FX/Ray_of_light03_v"
+	"$translucent" "1"
+	"$additive" "1"
+
+	"Proxies"
+	{
+
+		"TextureScroll"
+		{
+			"texturescrollvar" "$basetexturetransform"
+			"texturescrollrate" .005
+			"texturescrollangle" -90
+		}
+
+
+	}
+	
+}

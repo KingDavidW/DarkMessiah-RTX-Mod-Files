@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{	
+	"$baseTexture"	"cloth/L07_oldcarpet"
+	"$surfaceprop" "carpet"
+	"$nocull" 1
+	"$translucent" 1
+}

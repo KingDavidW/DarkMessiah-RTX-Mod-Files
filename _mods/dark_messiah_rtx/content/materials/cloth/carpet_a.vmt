@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$baseTexture"	"models/Carpet/Carpet_A"
+	"$surfaceprop" "carpet"
+	"$bumpmap" "models/Carpet/Carpet_A_normal"
+	"$nocull" 1
+	"$translucent" 1
+}

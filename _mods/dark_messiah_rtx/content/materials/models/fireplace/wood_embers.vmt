@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+//"VertexLitGeneric"
+{
+	// Original shader: BaseTimesLightmapSelfIllum
+	"$basetexture" "models/fireplace/Wood_embers"
+	
+	"$surfaceprop" "wood"
+	"%keywords" "c17skyscraper"
+}
+

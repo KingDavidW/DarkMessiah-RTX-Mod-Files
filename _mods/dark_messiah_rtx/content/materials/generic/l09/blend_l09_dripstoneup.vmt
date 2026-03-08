@@ -1,0 +1,24 @@
+"WorldVertexTransition"
+//"WorldVertexTransition"
+{
+	"$basetexture" "Generic/L09/L09_cliff_03"
+	"$basetexture2" "Generic/L09/L09_dripstone_up"
+
+	"%tooltexture" "Generic/L09/blend_L09_dripstonebase"
+	"%keywords" "L09"
+
+	"$bumpmap" "Generic/L09/L09_cliff_03_normal"
+	"$bumpmap2" "Generic/L09/L09_dripstone_up_normal"
+
+	"$normalmapalphaenvmapmask" 1
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.15 .13 .1]"
+	
+	//"lightmappedgeneric_HDR_dx9"
+	//	{
+        //                "$envmaptint" "[.4 .4 .4]"
+	//	}
+	"$surfaceprop" "Stone"
+}
+
+

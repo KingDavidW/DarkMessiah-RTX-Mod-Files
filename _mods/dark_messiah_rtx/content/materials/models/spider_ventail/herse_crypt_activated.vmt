@@ -1,0 +1,34 @@
+"VertexLitGeneric"
+{
+	
+	"$baseTexture"	"models/Spider_ventail/herse_crypt_activated"
+	"$surfaceprop" "metal_bouncy"
+
+
+	
+
+
+	"vertexlitgeneric_HDR_dx9"
+
+		{
+
+                        "$envmaptint" "[.2 .2 .2]"
+			
+		}
+	"Proxies"
+
+	{
+
+	
+		"Sine"
+		{
+			"resultvar" "$selfillumtint"
+			"sinemin" .4
+			"sinemax" 1
+			"sineperiod" 2.5
+		}
+
+
+
+	}
+}

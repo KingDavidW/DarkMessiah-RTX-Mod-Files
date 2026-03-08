@@ -1,0 +1,14 @@
+"UnlitGeneric"
+//"UnlitGeneric"
+{
+	// Original shader: BaseTimesVertexColorAlphaBlend
+	"$basetexture" "Generic/FX/Ray_of_light02_v"
+	"$translucent" "1"
+	//"$vertexcolor" "1"
+	//"$vertexalpha" "1"
+	"$additive" "1"
+	//"$selfillum" "1"
+	"$staticprop" "1"
+	"$nocull" "1" 
+	
+}

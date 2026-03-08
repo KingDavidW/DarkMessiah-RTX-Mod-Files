@@ -1,0 +1,14 @@
+"UnlitGeneric"
+{
+	
+	"$baseTexture"	"models/Skybox3D/Fog01"	
+ "Proxies"
+ {
+  "TextureScroll"
+  {
+   "texturescrollvar" "$baseTextureTransform"
+   "texturescrollrate" .020
+   "texturescrollangle" 90.00
+  }
+ }
+}

@@ -1,0 +1,7 @@
+"UnlitGeneric"
+{
+	"$basetexture" "Lights/White002"
+	
+	"$surfaceprop" "glass"
+	"$reflectivity" "[0 0 0]"
+}

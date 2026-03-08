@@ -1,0 +1,95 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "FX/FlameArrow/FA_skin_warrior_" 
+	"$SEPARATEALPHATEXTURE" "FX/FlameArrow/FA_skin_warrior_"
+
+	"$model" 1
+	
+	
+
+	"$texscale" 	"[4 0]"
+	"$rotate"	"[4 0]"	
+
+
+	"$additive" 1
+
+
+	"$translucent" 1
+
+	
+
+	"Proxies"
+	{
+	
+	"Sine"
+		{
+			"resultVar" "$color[0]"
+			"sineperiod" .37
+			"sinemin" 1
+			"sinemax" 1
+		}
+
+
+	"Sine"
+		{
+			"resultVar" "$color[1]"
+			"sineperiod" .37
+			"sinemin" 1
+			"sinemax" 1
+		}
+
+	"Sine"
+		{
+			"resultVar" "$color[2]"
+			"sineperiod" .37
+			"sinemin" 1
+			"sinemax" 1
+		}
+	"sine"
+		{
+			"sineperiod" .63
+			"sinemin" 1
+			"sinemax" 1
+			"resultvar" "$alpha"
+		}
+
+	"Sine"
+		{
+			"resultVar" "$texscale"
+			"sineperiod" .1
+			"sinemin" .994
+			"sinemax" 1
+		}
+		
+	"Sine"
+		{
+			"resultVar" "$rotate"
+			"sineperiod" .23
+			"sinemin" -0.12
+			"sinemax" 0.12
+		}
+
+	"Texturetransform"
+	
+		{
+			"scalevar" "$texscale"
+			"rotatevar" "$rotate"
+			"resultvar" "$basetexturetransform"
+		}
+	"AnimatedTexture"
+	
+		{
+			"animatedtexturevar" "$basetexture"
+			"animatedtextureframenumvar" "$frame"
+			"animatedtextureframerate" 25.00
+		}
+	"AnimatedTexture"
+		{
+			"animatedtexturevar" "$SEPARATEALPHATEXTURE"
+			"animatedtextureframenumvar" "$separatealphaframe"
+			"animatedtextureframerate" 25.00
+		}
+			
+	}
+
+}

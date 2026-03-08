@@ -1,0 +1,26 @@
+
+"VertexLitGeneric"
+//"VertexLitGeneric"
+{
+	
+	"$baseTexture"	"cable/cr_chain02"
+	"$bumpmap" "cable/cr_chain02_normal"
+
+	"$surfaceprop" "solidmetal"
+//	"$translucent" 1
+	"$alphatest" 			1
+	
+
+	"$vertexcolor"			1
+//	"$nocull"			1
+	"$MinLight"			10
+	"$MaxLight"			100
+	
+	// 
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 0.9
+	"$envmapsaturation" 1
+	"$envmaptint" "[.8 .8 .8]"
+
+	"$envmap" "env_cubemap"
+}

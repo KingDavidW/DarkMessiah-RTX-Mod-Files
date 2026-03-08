@@ -1,0 +1,10 @@
+{
+	"name"				    :	"Dark Messiah RTX",
+	"description"		    :	"A familiar journey in a new light.",
+	"author"			    :	"wiltOS Technologies",
+	"website"			    : 	"www.wiltostech.com",
+	"launch_parameters"		:	[ "+developer 0", "-novid", "-dev", "-dxlevel 70", "+mat_dxlevel 70", "+mat_softwarelighting 0", "+sv_cheats 1", "+r_frustumcullworld 0", "+mat_drawwater 0", "+r_portalsopenall 1", "+mat_very_high_texture 1", "+mat_picmip 0", "+mat_colorcorrection 0", "+r_drawdetailprops 1", "+datacachesize 128", "+r_rootlod 0", "+r_lod -1", "+r_modellodscale 0", "+map_background none", "+r_occlusion 0", "+r_PortalTestEnts 0", "+r_propsmaxdist 99999" ],
+    "modules"               :   [ "dmrtx_server.dll", "dmrtx_client.dll" ],
+	"version"				: 	"R2-03.08-LITE",
+	"add_to_path"			: 	true
+}

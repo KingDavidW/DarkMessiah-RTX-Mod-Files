@@ -1,0 +1,14 @@
+"Lightmappedgeneric"
+{	
+	"$baseTexture" "generic/l09/l09_cliff_02_crystal"
+	"$surfaceprop" "stone"
+	"$bumpmap" "generic/l09/l09_cliff_02_normal"
+	
+	"%keywords" "L09"
+
+	"lightmappedgeneric_HDR_dx9"
+	{
+           "$selfillumtint" "[.29 .31 .31]"     
+
+	}
+}

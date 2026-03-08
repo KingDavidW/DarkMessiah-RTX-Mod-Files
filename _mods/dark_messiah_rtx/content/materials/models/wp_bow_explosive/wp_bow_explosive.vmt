@@ -1,0 +1,57 @@
+"VertexLitGeneric"
+{
+	"$model" 1
+	"$baseTexture"	"models\Wp_Bow_explosive\Wp_Bow_explosive"
+	"$surfaceprop" "metal"
+	"$bumpmap" "models\Wp_Bow_explosive\Wp_Bow_explosive_normal"
+
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" .5
+
+	"$envmapsaturation" 1
+	"$envmaptint" "[2 .9 .9]"
+
+	"$envmap" "env_cubemap"
+	
+	"$selfillumtint" "[1 1 1]"
+
+	"vertexlitgeneric_HDR_dx9"
+
+	{
+
+               "$envmaptint" "[.5 .5 .5]"
+
+	}
+
+
+
+	"$nodecal" 1
+
+
+
+	"Proxies"
+
+	{
+
+		"sine"
+		{
+			
+			"resultvar" "$selfillumtint"
+			"sineperiod" 3
+			"sinemin" .5
+			"sinemax" 2
+			
+		}
+
+		"TextureScroll"
+		{
+			"texturescrollvar" "$bumptransform"
+			"texturescrollrate" .01
+			"texturescrollangle" 0
+		}
+
+
+	}
+
+
+}

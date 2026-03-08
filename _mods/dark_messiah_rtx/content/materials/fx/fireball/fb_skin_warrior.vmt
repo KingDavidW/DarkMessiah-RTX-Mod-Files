@@ -1,0 +1,44 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "FX/fireball/fb_skin_warrior_" 
+	"$model" 1
+	//"$SEPARATEALPHATEXTURE" "FX/fireball/fb_skin_warrior_normal"
+	
+	"$SEPARATEALPHATEXTURE" "FX/fireball/fb_skin_warrior_"
+
+	"$bumpmap" "FX/Fireball/FB_skin_warrior_normal"
+
+	"$texscale" 	"[4 0]"
+	"$rotate"	"[4 0]"	
+	
+
+
+	"$additive" 1
+	
+
+
+	"$translucent" 1
+
+	
+
+	"Proxies"
+	{
+	
+
+	"AnimatedTexture"
+		{
+			"animatedtexturevar" "$baseTexture"	
+			"animatedtextureframenumvar" "$frame"
+			"animatedtextureframerate" 25.00
+		}
+	"AnimatedTexture"
+		{
+			"animatedtexturevar" "$SEPARATEALPHATEXTURE"
+			"animatedtextureframenumvar" "$separatealphaframe"
+			"animatedtextureframerate" 25.00
+		}
+
+			
+	}
+
+}

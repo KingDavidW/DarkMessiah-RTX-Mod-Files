@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "particle/fog_L00"
+	"$translucent" "1"
+	"$additive" "1"
+}

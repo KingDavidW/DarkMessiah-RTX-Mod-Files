@@ -1,0 +1,9 @@
+"Sprite"
+{
+	// Original shader: BaseTimesVertexColorAlphaBlend
+	"$basetexture" "particle/smoke_white_thick"
+	"$vertexcolor" "1"
+	"$vertexalpha" "1"
+	"$translucent" "1"
+	"$spriteRenderMode" "1"
+}
