@@ -1,6 +1,7 @@
 # Dark Messiah RTX Mod Files
 The mod files for the DM RTX Mod. This is the final set of files, not compliable code.
 
+if you have an older (DM:RTX Patch) version of this mod, it is recommended you uninstall those files by deleting them!
 ## Dependencies
 wiltOS Dark Messiah Mod Launcher [Download](https://www.moddb.com/games/dark-messiah-of-might-magic/downloads)
 
