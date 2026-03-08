@@ -38,6 +38,6 @@ Riddick, Granto, and QWERTY for making some assorted props
 
 Stickyfingaz for creating an algorithm for pulling color information from the original textures
 
-Capybara for creating a bunch of models and the remaining environment textures
+Kapibaros for creating a bunch of models and the remaining environment textures
 
 The ChaiNNer and RTX Discord for helping get the whole thing put together!
