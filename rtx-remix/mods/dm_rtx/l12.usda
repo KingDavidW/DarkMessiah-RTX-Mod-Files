@@ -1,3 +1,491 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d691121cb233b326516db337b6c7e902ad2096f53193bdfa8b7f46d74c12e267
-size 28228
+#usda 1.0
+(
+    upAxis = "Y"
+)
+
+def Scope "Looks"
+{
+    def Material "AperturePBR_Translucent"
+    {
+        token outputs:mdl:displacement.connect = </Looks/AperturePBR_Translucent/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/AperturePBR_Translucent/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/AperturePBR_Translucent/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @./SubUSDs/materials/AperturePBR_Translucent.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+            float inputs:ior_constant = 1.3 (
+                customData = {
+                    float default = 1.3
+                    dictionary range = {
+                        float max = 3
+                        float min = 1
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Index of Refraction"
+                doc = "Index of Refraction of the material"
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+}
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        over "mat_3C8C2BBD55C59221"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_pavestone_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.01
+                float inputs:displace_out = 0.005
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_pavestone_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.35
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_pavestone_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/generic/base_materials/80_roughness.r.rtex.dds@
+            }
+        }
+
+        over "mat_81363B3D0C7E5CCE"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stonesquare_small_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.0015
+                float inputs:displace_out = 0.0008
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stonesquare_small_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.35
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stonesquare_small_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/generic/base_materials/70_roughness.r.rtex.dds@
+            }
+        }
+
+        over "mat_A3E811BC269A976A"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stonesquare_relief_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.0015
+                float inputs:displace_out = 0.0008
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stonesquare_relief_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.65
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stonesquare_relief_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/generic/base_materials/70_roughness.r.rtex.dds@
+            }
+        }
+
+        over "mat_3567BAD338266DCE"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stairborder_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.004
+                float inputs:displace_out = 0.002
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stairborder_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stairborder_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/generic/base_materials/70_roughness.r.rtex.dds@
+            }
+        }
+
+        over "mat_82FD3978C1C883B0"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_sandstone_01_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.00125
+                float inputs:displace_out = 0.00125
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_sandstone_01_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_sandstone_01_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_sandstone_01_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_2A042D20A9463326"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stoneblock_spider_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.002
+                float inputs:displace_out = 0.001
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stoneblock_spider_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 2
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stoneblock_spider_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stoneblock_spider_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_2FF6A46B66E40CC5"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stoneborder_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.002
+                float inputs:displace_out = 0.001
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stoneborder_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 2
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stoneborder_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stoneborder_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_415F62342B5588E6"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_pavestone_ornament_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.01
+                float inputs:displace_out = 0.005
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_pavestone_ornament_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.35
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_pavestone_ornament_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_pavestone_ornament_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_A5E38BE78544F9E8"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_wall_03_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.01
+                float inputs:displace_out = 0.005
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_wall_03_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.35
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_wall_03_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_wall_03_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_F80B8DCE44B87A2A"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_wall_01_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.01
+                float inputs:displace_out = 0.005
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_wall_01_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.35
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_wall_01_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_wall_01_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_D1B0159D09C680BD"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_brokenwall_b_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.01
+                float inputs:displace_out = 0.005
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_brokenwall_b_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.35
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_brokenwall_b_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_brokenwall_b_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_0D696F47A62B9E3D"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_brokenwall_c_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.01
+                float inputs:displace_out = 0.005
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_brokenwall_c_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.35
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_brokenwall_c_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_brokenwall_c_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_EB5F4FC5CD168FB8"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_coffinwall_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.01
+                float inputs:displace_out = 0.005
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_coffinwall_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.65
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_coffinwall_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_coffinwall_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_9D6581B2ECA69C13"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_darkmarble_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.01
+                float inputs:displace_out = 0.005
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_darkmarble_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.65
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_darkmarble_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_darkmarble_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_E1440CE1E6FFD14C"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_frieze_01_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.01
+                float inputs:displace_out = 0.005
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_frieze_01_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.65
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_frieze_01_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_frieze_01_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_A4B66A170694AF08"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_pavestairborder_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.01
+                float inputs:displace_out = 0.005
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_pavestairborder_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.65
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_pavestairborder_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_pavestairborder_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_AC9D85CBD1EDAAEF"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_pavestairs_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.01
+                float inputs:displace_out = 0.005
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_pavestairs_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.65
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_pavestairs_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_pavestairs_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_C82ADE923113767D"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_pavestone_metal_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.01
+                float inputs:displace_out = 0.005
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_pavestone_metal_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.65
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_pavestone_metal_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_pavestone_metal_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_13587F3427EA1014"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_sandstone_coffins_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.01
+                float inputs:displace_out = 0.005
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_sandstone_coffins_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.65
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_sandstone_coffins_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_sandstone_coffins_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_C7A9068CE9BD866C"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stairs_ornament_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.01
+                float inputs:displace_out = 0.005
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stairs_ornament_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.65
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stairs_ornament_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stairs_ornament_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_22EF7D29D087638E"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stoneblocks_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.01
+                float inputs:displace_out = 0.005
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stoneblocks_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.65
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stoneblocks_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stoneblocks_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_63FA83B0A6D1200E"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stonestairs_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.005
+                float inputs:displace_out = 0.0025
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stonestairs_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.65
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stonestairs_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_stonestairs_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_C809BE6FA54A987F"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_wood_break_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.01
+                float inputs:displace_out = 0.005
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_wood_break_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.65
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_wood_break_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_wood_break_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_BBA02F359F9173FF"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigpave_center_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.01
+                float inputs:displace_out = 0.005
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigpave_center_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.65
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigpave_center_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigpave_center_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_DB64CA117904347B"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigpave_neutral_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.01
+                float inputs:displace_out = 0.005
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigpave_neutral_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.65
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigpave_neutral_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigpave_neutral_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_09AD0D3859F6B287"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigpave_side_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.01
+                float inputs:displace_out = 0.005
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigpave_side_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.65
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigpave_side_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigpave_side_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_BD74371AB362C164"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigstone_base_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.01
+                float inputs:displace_out = 0.005
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigstone_base_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.65
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigstone_base_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigstone_base_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_5AC56B0965E40D7F"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigstone_frieze_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.01
+                float inputs:displace_out = 0.005
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigstone_frieze_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.65
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigstone_frieze_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigstone_frieze_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_893AD3CAA2360827"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigstone_slot_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.01
+                float inputs:displace_out = 0.005
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigstone_slot_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.65
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigstone_slot_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigstone_slot_rough.r.rtex.dds@
+            }
+        }
+
+        over "mat_8FE06DA2034F4AB4"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigstone_stairs_albedo.a.rtex.dds@
+                float inputs:displace_in = 0.01
+                float inputs:displace_out = 0.005
+                asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigstone_stairs_height.h.rtex.dds@
+                asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@
+                float inputs:normal_scale = 0.65
+                asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigstone_stairs_normal.n.rtex.dds@
+                asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l12/l12_zigstone_stairs_rough.r.rtex.dds@
+            }
+        }
+    }
+}
