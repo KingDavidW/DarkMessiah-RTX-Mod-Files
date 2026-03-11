@@ -1,0 +1,1149 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_714A957CF2DF580B"
+        {
+        }
+
+        over "mesh_4297D667C308E2CC"
+        {
+        }
+
+        over "mesh_80FF069E32063B2C" (
+            references = None
+        )
+        {
+        }
+
+        over "mesh_7D5262990D161A98" (
+            references = None
+        )
+        {
+            def Xform "ref_87d9cf47bce4407f83752b4b6ce7a7d1" (
+                prepend references = @./wiltos/models/props/nature/l7_trees/big_tree_med.usd@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    over "World"
+                    {
+                        over "Looks"
+                        {
+                            over "L7_e_tree01"
+                            {
+                                over "Shader"
+                                {
+                                    asset inputs:diffuse_texture = @./wiltos/materials/models/l7_tree/l7_e_tree01_albedo.a.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Albedo/Opacity Map"
+                                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    float inputs:displace_in = 0.02 (
+                                        customData = {
+                                            float default = 1
+                                            dictionary range = {
+                                                float max = 255
+                                                float min = 0
+                                            }
+                                        }
+                                        displayGroup = "Displacement"
+                                        displayName = "Inwards Displacement"
+                                        doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                                        hidden = false
+                                    )
+                                    asset inputs:height_texture = @./wiltos/materials/models/l7_tree/l7_e_tree01_height.h.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Displacement"
+                                        displayName = "Height Map"
+                                        doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:metallic_texture = @./wiltos/materials/models/l7_tree/l7_e_tree01_metalness.m.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Metallic Map"
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:normalmap_texture = @./wiltos/materials/models/l7_tree/l7_e_tree01_normal.n.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Normal Map"
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:reflectionroughness_texture = @./wiltos/materials/models/l7_tree/l7_e_tree01_roughness.r.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Roughness Map"
+                                        doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                }
+                            }
+
+                            over "L7_e_tree01_br02"
+                            {
+                                over "Shader"
+                                {
+                                    float inputs:alpha_test_reference_value = 0 (
+                                        customData = {
+                                            float default = 0
+                                        }
+                                        displayGroup = "Alpha Blending"
+                                        displayName = "Alpha Test Reference Value"
+                                        doc = """The value to use for alpha testing against.
+This parameter is unused.
+"""
+                                        hidden = false
+                                    )
+                                    int inputs:alpha_test_type = 5 (
+                                        customData = {
+                                            int default = 0
+                                        }
+                                        displayGroup = "Alpha Blending"
+                                        displayName = "Alpha Test Type"
+                                        doc = """The alpha state alpha test type to use.
+This parameter is unused.
+"""
+                                        hidden = false
+                                        renderType = "AlphaTestType"
+                                        sdrMetadata = {
+                                            string __SDR__enum_value = "Always"
+                                            string options = "Always:0|Never:1|Less:2|Equal:3|LessOrEqual:4|Greater:5|NotEqual:6|GreaterOrEqual:7"
+                                        }
+                                    )
+                                    bool inputs:blend_enabled = 0 (
+                                        customData = {
+                                            bool default = 0
+                                        }
+                                        displayGroup = "Alpha Blending"
+                                        displayName = "Blend Enabled"
+                                        doc = """Indicates if alpha state blending should be enabled.
+
+"""
+                                        hidden = false
+                                    )
+                                    int inputs:blend_type = 0 (
+                                        customData = {
+                                            int default = 0
+                                        }
+                                        displayGroup = "Alpha Blending"
+                                        displayName = "Blend Type"
+                                        doc = """The alpha state blend type to use.
+This parameter is unused.
+"""
+                                        hidden = false
+                                        renderType = "BlendType"
+                                        sdrMetadata = {
+                                            string __SDR__enum_value = "Alpha"
+                                            string options = "Alpha:0|AlphaEmissive:1|ReverseAlphaEmissive:2|Color:3|ColorEmissive:4|ReverseColorEmissive:5|Emissive:6|Multiplicative:7|DoubleMultiplicative:8"
+                                        }
+                                    )
+                                    asset inputs:diffuse_texture = @./wiltos/materials/models/l7_tree/l7_e_tree01_br02_albedo.a.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Albedo/Opacity Map"
+                                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    float inputs:displace_in = 0.01 (
+                                        customData = {
+                                            float default = 1
+                                            dictionary range = {
+                                                float max = 255
+                                                float min = 0
+                                            }
+                                        }
+                                        displayGroup = "Displacement"
+                                        displayName = "Inwards Displacement"
+                                        doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                                        hidden = false
+                                    )
+                                    asset inputs:height_texture = @./wiltos/materials/models/l7_tree/l7_e_tree01_br02_height.h.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Displacement"
+                                        displayName = "Height Map"
+                                        doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    bool inputs:inverted_blend = 0 (
+                                        customData = {
+                                            bool default = 0
+                                        }
+                                        displayGroup = "Alpha Blending"
+                                        displayName = "Inverted Blend"
+                                        doc = """Indicates if an inverted blend type should be used.
+This parameter is unused.
+"""
+                                        hidden = false
+                                    )
+                                    asset inputs:metallic_texture = @./wiltos/materials/models/l7_tree/l7_e_tree01_br02_metalness.m.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Metallic Map"
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:normalmap_texture = @./wiltos/materials/models/l7_tree/l7_e_tree01_br02_normal.n.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Normal Map"
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:reflectionroughness_texture = @./wiltos/materials/models/l7_tree/l7_e_tree01_br02_roughness.r.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Roughness Map"
+                                        doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    bool inputs:use_legacy_alpha_state = 0 (
+                                        customData = {
+                                            bool default = 1
+                                        }
+                                        displayGroup = "Alpha Blending"
+                                        displayName = "Use Legacy Alpha State"
+                                        doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.
+
+"""
+                                        hidden = false
+                                    )
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_255DAA47B5152F67" (
+            references = None
+        )
+        {
+        }
+
+        over "mesh_6EC3EFD55FCD669E" (
+            references = None
+        )
+        {
+            def Xform "ref_2cbea23f8b9a4a979eef6effb74ed055" (
+                prepend references = @./wiltos/models/props/nature/l7_trees/tree_red02_med.usd@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    over "World"
+                    {
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0, 0, 0)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                        over "Retopo_big_tree_med_big_tree_002"
+                        {
+                            over "mesh"
+                            {
+                                float3 xformOp:rotateXYZ = (0, 0, 0)
+                                float3 xformOp:scale = (1, 1, 1)
+                                double3 xformOp:translate = (0, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+                        }
+
+                        over "Looks"
+                        {
+                            over "L7_e_tree01_001"
+                            {
+                                over "Shader"
+                                {
+                                    asset inputs:diffuse_texture = @./wiltos/materials/models/l7_tree/l7_e_tree01_albedo.a.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Albedo/Opacity Map"
+                                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    float inputs:displace_in = 0.02 (
+                                        customData = {
+                                            float default = 1
+                                            dictionary range = {
+                                                float max = 255
+                                                float min = 0
+                                            }
+                                        }
+                                        displayGroup = "Displacement"
+                                        displayName = "Inwards Displacement"
+                                        doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                                        hidden = false
+                                    )
+                                    asset inputs:height_texture = @./wiltos/materials/models/l7_tree/l7_e_tree01_height.h.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Displacement"
+                                        displayName = "Height Map"
+                                        doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:metallic_texture = @./wiltos/materials/models/l7_tree/l7_e_tree01_metalness.m.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Metallic Map"
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:normalmap_texture = @./wiltos/materials/models/l7_tree/l7_e_tree01_normal.n.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Normal Map"
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:reflectionroughness_texture = @./wiltos/materials/models/l7_tree/l7_e_tree01_roughness.r.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Roughness Map"
+                                        doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                }
+                            }
+
+                            over "L7_e_tree01_br02_001"
+                            {
+                                over "Shader"
+                                {
+                                    int inputs:alpha_test_type = 5 (
+                                        customData = {
+                                            int default = 0
+                                        }
+                                        displayGroup = "Alpha Blending"
+                                        displayName = "Alpha Test Type"
+                                        doc = """The alpha state alpha test type to use.
+This parameter is unused.
+"""
+                                        hidden = false
+                                        renderType = "AlphaTestType"
+                                        sdrMetadata = {
+                                            string __SDR__enum_value = "Always"
+                                            string options = "Always:0|Never:1|Less:2|Equal:3|LessOrEqual:4|Greater:5|NotEqual:6|GreaterOrEqual:7"
+                                        }
+                                    )
+                                    asset inputs:diffuse_texture = @./wiltos/materials/models/l7_tree/l7_e_tree01_br02_albedo.a.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Albedo/Opacity Map"
+                                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    float inputs:displace_in = 0.01 (
+                                        customData = {
+                                            float default = 1
+                                            dictionary range = {
+                                                float max = 255
+                                                float min = 0
+                                            }
+                                        }
+                                        displayGroup = "Displacement"
+                                        displayName = "Inwards Displacement"
+                                        doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                                        hidden = false
+                                    )
+                                    asset inputs:height_texture = @./wiltos/materials/models/l7_tree/l7_e_tree01_br02_height.h.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Displacement"
+                                        displayName = "Height Map"
+                                        doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:metallic_texture = @./wiltos/materials/models/l7_tree/l7_e_tree01_br02_metalness.m.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Metallic Map"
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:normalmap_texture = @./wiltos/materials/models/l7_tree/l7_e_tree01_br02_normal.n.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Normal Map"
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:reflectionroughness_texture = @./wiltos/materials/models/l7_tree/l7_e_tree01_br02_roughness.r.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Roughness Map"
+                                        doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    bool inputs:use_legacy_alpha_state = 0 (
+                                        customData = {
+                                            bool default = 1
+                                        }
+                                        displayGroup = "Alpha Blending"
+                                        displayName = "Use Legacy Alpha State"
+                                        doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.
+
+"""
+                                        hidden = false
+                                    )
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_DF245E0F3E90A6B1" (
+            references = None
+        )
+        {
+        }
+
+        over "mesh_85E59A31046471AB" (
+            references = None
+        )
+        {
+            def Xform "ref_4252d18c3b1445859ae80652878401a3" (
+                prepend references = @./wiltos/models/props/nature/vegetals/bouleau_low_02.usd@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    over "World"
+                    {
+                        over "Looks"
+                        {
+                            over "Bouleau_Trunk_01"
+                            {
+                                over "Shader"
+                                {
+                                    asset inputs:diffuse_texture = @./wiltos/materials/models/vegetals/bouleau_trunk_01_albedo.a.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Albedo/Opacity Map"
+                                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    float inputs:displace_in = 0.01 (
+                                        customData = {
+                                            float default = 1
+                                            dictionary range = {
+                                                float max = 255
+                                                float min = 0
+                                            }
+                                        }
+                                        displayGroup = "Displacement"
+                                        displayName = "Inwards Displacement"
+                                        doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.\r
+This parameter is unused.\r
+"""
+                                        hidden = false
+                                    )
+                                    asset inputs:height_texture = @./wiltos/materials/models/vegetals/bouleau_trunk_01_height.h.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Displacement"
+                                        displayName = "Height Map"
+                                        doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.\r
+This parameter is unused.\r
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Metallic Map"
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:normalmap_texture = @./wiltos/materials/models/vegetals/bouleau_trunk_01_normal.n.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Normal Map"
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:reflectionroughness_texture = @./wiltos/materials/models/vegetals/bouleau_trunk_01_roughness.r.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Roughness Map"
+                                        doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.\r
+\r
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                }
+                            }
+
+                            over "Bouleau_Leaves01"
+                            {
+                                over "Shader"
+                                {
+                                    float inputs:alpha_test_reference_value = 0 (
+                                        customData = {
+                                            float default = 0
+                                        }
+                                        displayGroup = "Alpha Blending"
+                                        displayName = "Alpha Test Reference Value"
+                                        doc = """The value to use for alpha testing against.\r
+This parameter is unused.\r
+"""
+                                        hidden = false
+                                    )
+                                    int inputs:alpha_test_type = 5 (
+                                        customData = {
+                                            int default = 0
+                                        }
+                                        displayGroup = "Alpha Blending"
+                                        displayName = "Alpha Test Type"
+                                        doc = """The alpha state alpha test type to use.\r
+This parameter is unused.\r
+"""
+                                        hidden = false
+                                        renderType = "AlphaTestType"
+                                        sdrMetadata = {
+                                            string __SDR__enum_value = "Always"
+                                            string options = "Always:0|Never:1|Less:2|Equal:3|LessOrEqual:4|Greater:5|NotEqual:6|GreaterOrEqual:7"
+                                        }
+                                    )
+                                    asset inputs:diffuse_texture = @./wiltos/materials/models/vegetals/bouleau_leaves01_albedo.a.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Albedo/Opacity Map"
+                                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel\r
+\r
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    float inputs:displace_in = 0.01 (
+                                        customData = {
+                                            float default = 1
+                                            dictionary range = {
+                                                float max = 255
+                                                float min = 0
+                                            }
+                                        }
+                                        displayGroup = "Displacement"
+                                        displayName = "Inwards Displacement"
+                                        doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.\r
+This parameter is unused.\r
+"""
+                                        hidden = false
+                                    )
+                                    asset inputs:height_texture = @./wiltos/materials/models/vegetals/bouleau_leaves01_height.h.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Displacement"
+                                        displayName = "Height Map"
+                                        doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.\r
+This parameter is unused.\r
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Metallic Map"
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:normalmap_texture = @./wiltos/materials/models/vegetals/bouleau_leaves01_normal.n.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Normal Map"
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:reflectionroughness_texture = @./wiltos/materials/models/vegetals/bouleau_leaves01_roughness.r.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Roughness Map"
+                                        doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.\r
+\r
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    bool inputs:use_legacy_alpha_state = 0 (
+                                        customData = {
+                                            bool default = 1
+                                        }
+                                        displayGroup = "Alpha Blending"
+                                        displayName = "Use Legacy Alpha State"
+                                        doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.\r
+\r
+"""
+                                        hidden = false
+                                    )
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_616CAC9E4B795158" (
+            references = None
+        )
+        {
+            def Xform "ref_44957963001144d89c083766863ef88d" (
+                prepend references = @./wiltos/models/props/nature/vegetals/bouleau_15m.usd@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    over "World"
+                    {
+                        over "Looks"
+                        {
+                            over "Bouleau_Trunk_01"
+                            {
+                                over "Shader"
+                                {
+                                    asset inputs:diffuse_texture = @./wiltos/materials/models/vegetals/bouleau_trunk_01_albedo.a.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Albedo/Opacity Map"
+                                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    float inputs:displace_in = 0.01 (
+                                        customData = {
+                                            float default = 1
+                                            dictionary range = {
+                                                float max = 255
+                                                float min = 0
+                                            }
+                                        }
+                                        displayGroup = "Displacement"
+                                        displayName = "Inwards Displacement"
+                                        doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                                        hidden = false
+                                    )
+                                    asset inputs:height_texture = @./wiltos/materials/models/vegetals/bouleau_trunk_01_height.h.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Displacement"
+                                        displayName = "Height Map"
+                                        doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Metallic Map"
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:normalmap_texture = @./wiltos/materials/models/vegetals/bouleau_trunk_01_normal.n.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Normal Map"
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:reflectionroughness_texture = @./wiltos/materials/models/vegetals/bouleau_trunk_01_roughness.r.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Roughness Map"
+                                        doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                }
+                            }
+
+                            over "Bouleau_Leaves01"
+                            {
+                                over "Shader"
+                                {
+                                    int inputs:alpha_test_type = 5 (
+                                        customData = {
+                                            int default = 0
+                                        }
+                                        displayGroup = "Alpha Blending"
+                                        displayName = "Alpha Test Type"
+                                        doc = """The alpha state alpha test type to use.
+This parameter is unused.
+"""
+                                        hidden = false
+                                        renderType = "AlphaTestType"
+                                        sdrMetadata = {
+                                            string __SDR__enum_value = "Always"
+                                            string options = "Always:0|Never:1|Less:2|Equal:3|LessOrEqual:4|Greater:5|NotEqual:6|GreaterOrEqual:7"
+                                        }
+                                    )
+                                    asset inputs:diffuse_texture = @./wiltos/materials/models/vegetals/bouleau_leaves01_albedo.a.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Albedo/Opacity Map"
+                                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Metallic Map"
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:normalmap_texture = @./wiltos/materials/models/vegetals/bouleau_leaves01_normal.n.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Normal Map"
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:reflectionroughness_texture = @./wiltos/materials/models/vegetals/bouleau_leaves01_roughness.r.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Roughness Map"
+                                        doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    bool inputs:use_legacy_alpha_state = 0 (
+                                        customData = {
+                                            bool default = 1
+                                        }
+                                        displayGroup = "Alpha Blending"
+                                        displayName = "Use Legacy Alpha State"
+                                        doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.
+
+"""
+                                        hidden = false
+                                    )
+                                }
+                            }
+                        }
+
+                        over "bouleau_6m_001"
+                        {
+                            over "bouleau_6m_003"
+                            {
+                                float3 xformOp:rotateXYZ = (0, 0, 0)
+                                float3 xformOp:scale = (1, 1, 1)
+                                float3 xformOp:translate = (0, 0, 0)
+                                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_8F4385DC4C1729F0" (
+            references = None
+        )
+        {
+        }
+
+        over "mesh_672EEFA6CB900AC4" (
+            references = None
+        )
+        {
+            def Xform "ref_0e3eba7aa0e84528a0a7f36551361cfd" (
+                prepend references = @./wiltos/models/props/nature/vegetals/bouleau_6m.usd@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    over "World"
+                    {
+                        over "Looks"
+                        {
+                            over "Bouleau_Leaves01"
+                            {
+                                over "Shader"
+                                {
+                                    int inputs:alpha_test_type = 5 (
+                                        customData = {
+                                            int default = 0
+                                        }
+                                        displayGroup = "Alpha Blending"
+                                        displayName = "Alpha Test Type"
+                                        doc = """The alpha state alpha test type to use.
+This parameter is unused.
+"""
+                                        hidden = false
+                                        renderType = "AlphaTestType"
+                                        sdrMetadata = {
+                                            string __SDR__enum_value = "Always"
+                                            string options = "Always:0|Never:1|Less:2|Equal:3|LessOrEqual:4|Greater:5|NotEqual:6|GreaterOrEqual:7"
+                                        }
+                                    )
+                                    asset inputs:diffuse_texture = @./wiltos/materials/models/vegetals/bouleau_leaves01_albedo.a.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Albedo/Opacity Map"
+                                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    float inputs:displace_in = 0.01 (
+                                        customData = {
+                                            float default = 1
+                                            dictionary range = {
+                                                float max = 255
+                                                float min = 0
+                                            }
+                                        }
+                                        displayGroup = "Displacement"
+                                        displayName = "Inwards Displacement"
+                                        doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                                        hidden = false
+                                    )
+                                    asset inputs:height_texture = @./wiltos/materials/models/vegetals/bouleau_leaves01_height.h.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Displacement"
+                                        displayName = "Height Map"
+                                        doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Metallic Map"
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:normalmap_texture = @./wiltos/materials/models/vegetals/bouleau_leaves01_normal.n.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Normal Map"
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:reflectionroughness_texture = @./wiltos/materials/models/vegetals/bouleau_leaves01_roughness.r.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Roughness Map"
+                                        doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    bool inputs:use_legacy_alpha_state = 0 (
+                                        customData = {
+                                            bool default = 1
+                                        }
+                                        displayGroup = "Alpha Blending"
+                                        displayName = "Use Legacy Alpha State"
+                                        doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.
+
+"""
+                                        hidden = false
+                                    )
+                                }
+                            }
+
+                            over "Bouleau_Trunk_01"
+                            {
+                                over "Shader"
+                                {
+                                    asset inputs:diffuse_texture = @./wiltos/materials/models/vegetals/bouleau_trunk_01_albedo.a.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Albedo/Opacity Map"
+                                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:metallic_texture = @./wiltos/generic/base_materials/no_metalness.m.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Metallic Map"
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:normalmap_texture = @./wiltos/materials/models/vegetals/bouleau_trunk_01_normal.n.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Normal Map"
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                    asset inputs:reflectionroughness_texture = @./wiltos/materials/models/vegetals/bouleau_trunk_01_roughness.r.rtex.dds@ (
+                                        colorSpace = "auto"
+                                        customData = {
+                                            asset default = @@
+                                        }
+                                        displayGroup = "Base Material"
+                                        displayName = "Roughness Map"
+                                        doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                                        hidden = false
+                                        renderType = "texture_2d"
+                                    )
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_91DBCE0ED585B178" (
+            references = None
+        )
+        {
+        }
+    }
+}

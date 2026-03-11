@@ -1,0 +1,187 @@
+#usda 1.0
+(
+    upAxis = "Y"
+)
+
+def Scope "Looks"
+{
+    def Material "AperturePBR_Translucent"
+    {
+        token outputs:mdl:displacement.connect = </Looks/AperturePBR_Translucent/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/AperturePBR_Translucent/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/AperturePBR_Translucent/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @./SubUSDs/materials/AperturePBR_Translucent.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+            float inputs:ior_constant = 1.3 (
+                customData = {
+                    float default = 1.3
+                    dictionary range = {
+                        float max = 3
+                        float min = 1
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Index of Refraction"
+                doc = "Index of Refraction of the material"
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+}
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        over "mat_D6FDE01450D01928"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/materials/skybox/sky_l02_nightup.a.rtex.dds@
+            }
+        }
+
+        over "mat_B63155E6A3DE130B"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/materials/skybox/sky_l02_nightdn.a.rtex.dds@
+            }
+        }
+
+        over "mat_55F70970EF74F4C2"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/materials/skybox/sky_l02_nightft.a.rtex.dds@
+            }
+        }
+
+        over "mat_607E55097C79AAB5"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/materials/skybox/sky_l02_nightbk.a.rtex.dds@
+            }
+        }
+
+        over "mat_199C2CEBEC0E6092"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/materials/skybox/sky_l02_nightlf.a.rtex.dds@
+            }
+        }
+
+        over "mat_FF0AF8D7D87D8B01"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/materials/skybox/sky_l02_nightrt.a.rtex.dds@
+            }
+        }
+
+        over "mat_8A178A12DC5D5319"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/materials/skybox/sky_l11rt.a.rtex.dds@
+            }
+        }
+
+        over "mat_A0B94C7394F5266D"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/materials/skybox/sky_l11lf.a.rtex.dds@
+            }
+        }
+
+        over "mat_271C9E348788DF56"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/materials/skybox/sky_l11bk.a.rtex.dds@
+            }
+        }
+
+        over "mat_0B9AD4590F54517D"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/materials/skybox/sky_l11ft.a.rtex.dds@
+            }
+        }
+
+        over "mat_A3DAB93F45A63C44"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/materials/skybox/sky_l11dn.a.rtex.dds@
+            }
+        }
+
+        over "mat_630714E09063EB06"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/materials/skybox/sky_l11up.a.rtex.dds@
+            }
+        }
+
+        over "mat_3BDDC154EBAAE114"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/materials/skybox/sky_l02_daybk.a.rtex.dds@
+            }
+        }
+
+        over "mat_4FA0F0AB06CFE80B"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/materials/skybox/sky_l02_dayup.a.rtex.dds@
+            }
+        }
+
+        over "mat_D7E952511FD57F96"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/materials/skybox/sky_l02_dayrt.a.rtex.dds@
+            }
+        }
+
+        over "mat_CF6A35DD48E34713"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/materials/skybox/sky_l02_daylf.a.rtex.dds@
+            }
+        }
+
+        over "mat_20894B6BD2D001C7"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/materials/skybox/sky_l02_dayft.a.rtex.dds@
+            }
+        }
+
+        over "mat_A588335D2A254F6F"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/materials/skybox/sky_l02_daydn.a.rtex.dds@
+            }
+        }
+    }
+}

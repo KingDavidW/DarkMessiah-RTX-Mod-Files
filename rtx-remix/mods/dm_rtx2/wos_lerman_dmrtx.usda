@@ -1,0 +1,44 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary cameraSettings = {
+            dictionary Front = {
+                double3 position = (1282.0513290766446, 0, 0)
+                double radius = 500
+            }
+            dictionary Perspective = {
+                double3 position = (-543.9431634724561, -4045.0996869213836, 271.1887286448165)
+                double3 target = (-3552.240315099619, -6237.852269795986, -986.4254738460924)
+            }
+            dictionary Right = {
+                double3 position = (0, -1282.0513290766446, 0)
+                double radius = 500
+            }
+            dictionary Top = {
+                double3 position = (0, 0, 1282.0513290766446)
+                double radius = 500
+            }
+            string boundCamera = "/OmniverseKit_Persp"
+        }
+        string lightspeed_layer_type = "workfile"
+        dictionary omni_layer = {
+            string authoring_layer = "./toolkit_actions.usda"
+            dictionary locked = {
+                bool "../rtx-remix/captures/l00_walls.usd" = 1
+                bool "./deps/captures/l00_beam.usd" = 1
+            }
+        }
+        dictionary renderSettings = {
+        }
+    }
+    endTimeCode = 1
+    metersPerUnit = 0.38999998569488525
+    startTimeCode = 0
+    subLayers = [
+        @./mod.usda@,
+        @./deps/captures/l00_beam.usd@
+    ]
+    timeCodesPerSecond = 24
+    upAxis = "Z"
+)
+

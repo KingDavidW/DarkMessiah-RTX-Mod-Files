@@ -1,0 +1,1547 @@
+#usda 1.0
+(
+    upAxis = "Y"
+)
+
+def Scope "Looks"
+{
+    def Material "AperturePBR_Translucent"
+    {
+        token outputs:mdl:displacement.connect = </Looks/AperturePBR_Translucent/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/AperturePBR_Translucent/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/AperturePBR_Translucent/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @./SubUSDs/materials/AperturePBR_Translucent.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+            float inputs:ior_constant = 1.3 (
+                customData = {
+                    float default = 1.3
+                    dictionary range = {
+                        float max = 3
+                        float min = 1
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Index of Refraction"
+                doc = "Index of Refraction of the material"
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+}
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        over "mat_2D06800538D394C2"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_46_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_46_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_22A3FDF856D5A3D9"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_45_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_45_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_2BD812643322462B"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_44_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_44_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_15BAAA0549D4CE3C"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_43_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_43_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_19DD3CA7EFED624D"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_42_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_42_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_F52912D53436F9E2"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_41_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_41_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_188C4B581C7034CC"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_40_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_40_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_13EA2E67BA60D9F1"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_39_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_39_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_5F1AF1BE665E9000"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_38_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_38_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_D34A87CF3F2DC0E0"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_37_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_37_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_756BC0A908237F65"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_36_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_36_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_E566CB2598A7B78A"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_35_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_35_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_41D722E0DCC6CBDE"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_34_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_34_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_6F3D3DE19832DA50"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_33_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_33_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_77E5F9764E5D8FCE"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_32_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_32_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_6F82E6D6C8BC0D78"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_31_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_31_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_304CFF877D40EDF1"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_30_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_30_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_BA48EBA5147F94D3"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_29_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_29_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_C388AAAC4C319C76"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_28_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_28_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_A741A4B7225895BE"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_27_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_27_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_E1C83297EDBAC176"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_26_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_26_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_611F77B4EF163D24"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_25_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_25_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_6EF3D33434432B26"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_24_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_24_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_E8609AE6BD03C795"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_23_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_23_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_145ABBD63E615920"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_22_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_22_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_648E4E880B386F72"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_21_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_21_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_3FBCD1EB5C8F76F2"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_20_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_20_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_DC673950CC96F89D"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_19_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_19_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_6B6470B9BB49BFA2"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_18_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_18_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_1F79D3DEFD3FB2B0"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_17_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_17_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_1242047A4D40EF9F"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_16_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_16_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_FB4568B85E458383"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_15_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_15_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_780F04D090890906"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_14_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_14_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_74FCD7BFF9DB6CD8"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_13_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_13_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_EC03FF9D96AE6955"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_12_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_12_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_1EDA940C6EB72898"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_11_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_11_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_6B24FF3E8D1842F6"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_10_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_10_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_D47D638D8C165F0E"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_09_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_09_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_EA89578A5F6B3940"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_08_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_08_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_00EA37A381A1AA29"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_07_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_07_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_7B50317D8A3F8B17"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_06_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_06_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_B3DB82550CABA33A"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_05_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_05_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_1FA70F8D54F2EDBB"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_04_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_04_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_E1D8967B9DA441DC"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_03_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_03_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_D444027C1F6EB2D9"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_02_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_02_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_27E0AB2A6488B2B2"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_01_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_01_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+
+        over "mat_EB9120524E02E2F2"
+        {
+            over "Shader"
+            {
+                bool inputs:blend_enabled = 1
+                int inputs:blend_type = 3
+                asset inputs:diffuse_texture = @./inferno/flame_00_albedo.a.rtex.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10
+                asset inputs:emissive_mask_texture = @./inferno/flame_00_emissive.e.rtex.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1
+                float inputs:ior_constant = 1
+                float inputs:transmittance_measurement_distance = 100000000
+                bool inputs:use_legacy_alpha_state = 0
+            }
+        }
+    }
+}

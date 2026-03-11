@@ -1,0 +1,643 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "cameras"
+    {
+        over "Camera"
+        {
+            custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -2180.9372798564505)
+            matrix4d xformOp:transform = ( (0.9450458010587182, -0.32693795762936906, 0.00007591094842555529, 0), (0.00041613294352316107, 0.0014350599056864902, 0.9999988837175323, 0), (-0.3269377016110027, -0.9450447145316222, 0.0014922469927978388, 0), (5.975159766612097, 318.6557457984028, -365.70526030071403, 0.9999999999999998) )
+        }
+    }
+
+    over "meshes"
+    {
+        over "mesh_5DFA3728C11965DD" (
+            references = None
+        )
+        {
+            def Xform "ref_90306806c4f34bcdad171f122f2fe15a" (
+                prepend references = @./wiltos/models/props/archi/cr/l08_bonescatacomb07.usd@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (0.5, 0.5, 0.5)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "World"
+                    {
+                        over "Looks"
+                        {
+                            over "dark_skulls"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/Skull_Bones_Albedo_darker.a.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/Skulls_Bones_Normaldx_OTH_Normal.n.rtex.dds@
+                                }
+                            }
+
+                            over "ribs_and_bones__use_dark_skulls_textures_"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/Skull_Bones_Albedo_darker.a.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/Skulls_Bones_Normaldx_OTH_Normal.n.rtex.dds@
+                                }
+                            }
+
+                            over "light_skulls"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/Skull_Bones_Albedo_lighter.a.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/Skulls_Bones_Normaldx_OTH_Normal.n.rtex.dds@
+                                }
+                            }
+
+                            over "Mud"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./wiltos/capybara/v2-materials/generic/l00/l00_bones_albedo.a.rtex.dds@
+                                    custom float inputs:displace_in = 0.01
+                                    custom float inputs:displace_out = 0.005
+                                    custom asset inputs:height_texture = @./wiltos/capybara/v2-materials/generic/l00/l00_bones_height.h.rtex.dds@
+                                    custom asset inputs:metallic_texture = @@
+                                    custom asset inputs:normalmap_texture = @./wiltos/capybara/v2-materials/generic/l00/l00_bones_normal.n.rtex.dds@
+                                    custom asset inputs:reflectionroughness_texture = @./wiltos/capybara/v2-materials/generic/l00/l00_bones_rough.r.rtex.dds@
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_D8B5A6A14DCB96F1" (
+            references = None
+        )
+        {
+            def Xform "ref_65f4a849e64c4c2ca2d44e2ce4f8aea8" (
+                prepend references = @./wiltos/models/props/archi/cr/l08_bonescatacomb06.usda@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (0.5, 0.5, 0.5)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "World"
+                    {
+                        over "Looks"
+                        {
+                            over "cr_bonescatacomb_dump"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/cr_bonescatacomb_dump2_albedo.a.rtex.dds@
+                                    custom asset inputs:height_texture = @./wiltos/materials/models/cr_bonescatacomb/cr_bonescatacomb_dump2_height.h.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/cr_bonescatacomb_dump2_normal.n.rtex.dds@
+                                    custom asset inputs:reflectionroughness_texture = @./wiltos/materials/models/cr_bonescatacomb/cr_bonescatacomb_dump2_roughness.r.rtex.dds@
+                                }
+                            }
+
+                            over "bones__use_dark_skulls_textures_"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/Skull_Bones_Albedo_darker.a.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/Skulls_Bones_Normaldx_OTH_Normal.n.rtex.dds@
+                                }
+                            }
+
+                            over "light_skulls_001"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/Skull_Bones_Albedo_lighter.a.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/Skulls_Bones_Normaldx_OTH_Normal.n.rtex.dds@
+                                }
+                            }
+
+                            over "dark_skulls_001"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/Skull_Bones_Albedo_darker.a.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/Skulls_Bones_Normaldx_OTH_Normal.n.rtex.dds@
+                                }
+                            }
+
+                            over "brown_skulls_001"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/Skull_Albedo_brown.a.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/Skulls_Bones_Normaldx_OTH_Normal.n.rtex.dds@
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_250B37019AAD2EDC" (
+            references = None
+        )
+        {
+            def Xform "ref_f96028223b4a493abfb0eb2c52cb15d0" (
+                prepend references = @./wiltos/models/props/archi/cr/Bone_wall.usda@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (0.72, 0.72, 0.72)
+                    double3 xformOp:translate = (-5, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "World"
+                    {
+                        over "Looks"
+                        {
+                            over "bones__use_dark_skulls_textures_"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/Skull_Bones_Albedo_darker.a.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/Skulls_Bones_Normaldx_OTH_Normal.n.rtex.dds@
+                                }
+                            }
+
+                            over "bones__use_light_skulls_textures_"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/Skull_Bones_Albedo_darker.a.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/Skulls_Bones_Normaldx_OTH_Normal.n.rtex.dds@
+                                }
+                            }
+
+                            over "dark_skulls_002"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/Skull_Bones_Albedo_darker.a.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/Skulls_Bones_Normaldx_OTH_Normal.n.rtex.dds@
+                                }
+                            }
+
+                            over "light_skulls"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/Skull_Bones_Albedo_lighter.a.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/Skulls_Bones_Normaldx_OTH_Normal.n.rtex.dds@
+                                }
+                            }
+
+                            over "Wall_base_texture"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/l08_bonescatacomb_albedo.a.rtex.dds@
+                                    custom asset inputs:height_texture = @./wiltos/materials/models/cr_bonescatacomb/l08_bonescatacomb_height.h.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/l08_bonescatacomb_normal.n.rtex.dds@
+                                    custom asset inputs:reflectionroughness_texture = @./wiltos/materials/models/cr_bonescatacomb/l08_bonescatacomb_rough.r.rtex.dds@
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_364D32DF2FCA4B34" (
+            references = None
+        )
+        {
+            def Xform "ref_fbfc9e9dfc984bbea9860483726f0a3a" (
+                prepend references = @./wiltos/models/props/archi/cr/cr_bonescatacomb05.usda@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (0.5, 0.5, 0.5)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "World"
+                    {
+                        over "Looks"
+                        {
+                            over "bones__use_dark_skulls_textures_"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/Skull_Bones_Albedo_darker.a.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/Skulls_Bones_Normaldx_OTH_Normal.n.rtex.dds@
+                                }
+                            }
+
+                            over "cr_bonescatacomb_dump"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/l08_bonescatacomb_albedo.a.rtex.dds@
+                                    custom asset inputs:height_texture = @./wiltos/materials/models/cr_bonescatacomb/l08_bonescatacomb_height.h.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/l08_bonescatacomb_normal.n.rtex.dds@
+                                    custom asset inputs:reflectionroughness_texture = @./wiltos/materials/models/cr_bonescatacomb/l08_bonescatacomb_rough.r.rtex.dds@
+                                }
+                            }
+                        }
+
+                        over "Skulls_004"
+                        {
+                            over "studio_CR_BonesCatacomb05_MESH" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </RootNode/meshes/mesh_364D32DF2FCA4B34/ref_fbfc9e9dfc984bbea9860483726f0a3a/XForms/World/Skulls_004/studio_CR_BonesCatacomb05_MESH/Looks> (
+                                    bindMaterialAs = "strongerThanDescendants"
+                                )
+
+                                def Material "Looks"
+                                {
+                                    token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_364D32DF2FCA4B34/ref_fbfc9e9dfc984bbea9860483726f0a3a/XForms/World/Skulls_004/studio_CR_BonesCatacomb05_MESH/Looks/Shader.outputs:out>
+                                    token outputs:mdl:surface.connect = </RootNode/meshes/mesh_364D32DF2FCA4B34/ref_fbfc9e9dfc984bbea9860483726f0a3a/XForms/World/Skulls_004/studio_CR_BonesCatacomb05_MESH/Looks/Shader.outputs:out>
+                                    token outputs:mdl:volume.connect = </RootNode/meshes/mesh_364D32DF2FCA4B34/ref_fbfc9e9dfc984bbea9860483726f0a3a/XForms/World/Skulls_004/studio_CR_BonesCatacomb05_MESH/Looks/Shader.outputs:out>
+
+                                    def Shader "Shader"
+                                    {
+                                        uniform token info:implementationSource = "sourceAsset"
+                                        uniform asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                                        uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                                        custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/Skull_Bones_Albedo_lighter.a.rtex.dds@
+                                        custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/Skulls_Bones_Normaldx_OTH_Normal.n.rtex.dds@
+                                        token outputs:out (
+                                            renderType = "material"
+                                        )
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_669042F035D3EEC7" (
+            references = None
+        )
+        {
+            def Xform "ref_0767b250ed8b4a42a9ad2af713bff5a5" (
+                prepend references = @./wiltos/models/props/archi/cr/l08_bonescatacomb04.usda@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (0.5, 0.5, 0.5)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "World"
+                    {
+                        over "Looks"
+                        {
+                            over "bones__use_dark_skulls_textures_"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/Skull_Bones_Albedo_darker.a.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/Skulls_Bones_Normaldx_OTH_Normal.n.rtex.dds@
+                                }
+                            }
+
+                            over "cr_bonescatacomb_dump"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/l08_bonescatacomb_albedo.a.rtex.dds@
+                                    custom asset inputs:height_texture = @./wiltos/materials/models/cr_bonescatacomb/l08_bonescatacomb_height.h.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/l08_bonescatacomb_normal.n.rtex.dds@
+                                    custom asset inputs:reflectionroughness_texture = @./wiltos/materials/models/cr_bonescatacomb/l08_bonescatacomb_rough.r.rtex.dds@
+                                }
+                            }
+                        }
+
+                        over "Skulls_001"
+                        {
+                            over "studio_cr_bonescatacomb04_MESH" (
+                                prepend apiSchemas = ["MaterialBindingAPI"]
+                            )
+                            {
+                                rel material:binding = </RootNode/meshes/mesh_669042F035D3EEC7/ref_0767b250ed8b4a42a9ad2af713bff5a5/XForms/World/Skulls_001/studio_cr_bonescatacomb04_MESH/Looks> (
+                                    bindMaterialAs = "strongerThanDescendants"
+                                )
+
+                                def Material "Looks"
+                                {
+                                    token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_669042F035D3EEC7/ref_0767b250ed8b4a42a9ad2af713bff5a5/XForms/World/Skulls_001/studio_cr_bonescatacomb04_MESH/Looks/Shader.outputs:out>
+                                    token outputs:mdl:surface.connect = </RootNode/meshes/mesh_669042F035D3EEC7/ref_0767b250ed8b4a42a9ad2af713bff5a5/XForms/World/Skulls_001/studio_cr_bonescatacomb04_MESH/Looks/Shader.outputs:out>
+                                    token outputs:mdl:volume.connect = </RootNode/meshes/mesh_669042F035D3EEC7/ref_0767b250ed8b4a42a9ad2af713bff5a5/XForms/World/Skulls_001/studio_cr_bonescatacomb04_MESH/Looks/Shader.outputs:out>
+
+                                    def Shader "Shader"
+                                    {
+                                        uniform token info:implementationSource = "sourceAsset"
+                                        uniform asset info:mdl:sourceAsset = @AperturePBR_Opacity.mdl@
+                                        uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                                        custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/Skull_Bones_Albedo_lighter.a.rtex.dds@
+                                        custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/Skulls_Bones_Normaldx_OTH_Normal.n.rtex.dds@
+                                        token outputs:out (
+                                            renderType = "material"
+                                        )
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_7EAE7AB30EE9D5DA" (
+            references = None
+        )
+        {
+            def Xform "ref_aecc0a2dac58493abb82694875b52858" (
+                prepend references = @./wiltos/models/props/archi/cr/Bone_wall.usda@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "XForms"
+                {
+                    float3 xformOp:rotateXYZ = (90, 0, 0)
+                    float3 xformOp:scale = (0.6, 0.5, 0.7)
+                    double3 xformOp:translate = (-5, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "World"
+                    {
+                        over "Looks"
+                        {
+                            over "bones__use_dark_skulls_textures_"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/Skull_Bones_Albedo_darker.a.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/Skulls_Bones_Normaldx_OTH_Normal.n.rtex.dds@
+                                }
+                            }
+
+                            over "bones__use_light_skulls_textures_"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/Skull_Bones_Albedo_lighter.a.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/Skulls_Bones_Normaldx_OTH_Normal.n.rtex.dds@
+                                }
+                            }
+
+                            over "dark_skulls_002"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/Skull_Bones_Albedo_darker.a.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/Skulls_Bones_Normaldx_OTH_Normal.n.rtex.dds@
+                                }
+                            }
+
+                            over "light_skulls"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/Skull_Bones_Albedo_lighter.a.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/Skulls_Bones_Normaldx_OTH_Normal.n.rtex.dds@
+                                }
+                            }
+
+                            over "Wall_base_texture"
+                            {
+                                over "Shader"
+                                {
+                                    custom asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/l08_bonescatacomb_albedo.a.rtex.dds@
+                                    custom asset inputs:height_texture = @./wiltos/materials/models/cr_bonescatacomb/l08_bonescatacomb_height.h.rtex.dds@
+                                    custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/l08_bonescatacomb_normal.n.rtex.dds@
+                                    custom asset inputs:reflectionroughness_texture = @./wiltos/materials/models/cr_bonescatacomb/l08_bonescatacomb_rough.r.rtex.dds@
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_2CB53B0936CC9846"
+        {
+            over "mesh" (
+                prepend apiSchemas = ["ParticleSystemAPI"]
+            )
+            {
+                bool primvars:particle:alignParticlesToVelocity = 0
+                uniform token primvars:particle:billboardType = "FaceCamera_Spherical"
+                bool primvars:particle:enableMotionTrail = 0
+                float primvars:particle:gravityForce = 100
+                bool primvars:particle:hideEmitter = 1
+                float primvars:particle:initialVelocityConeAngleDegrees = 180
+                float primvars:particle:initialVelocityFromMotion = 10
+                float primvars:particle:initialVelocityFromNormal = 10
+                int primvars:particle:maxNumParticles = 30000
+                color4f primvars:particle:maxSpawnColor = (1, 0.99999, 0.99999, 1)
+                float primvars:particle:maxSpawnRotationSpeed = 0
+                float primvars:particle:maxSpawnSize = 12
+                float primvars:particle:maxTargetRotationSpeed = 0
+                float primvars:particle:maxTargetSize = 0
+                float primvars:particle:maxTimeToLive = 2
+                color4f primvars:particle:minSpawnColor = (1, 0.99999, 0.99999, 1)
+                float primvars:particle:minSpawnRotationSpeed = 0
+                float primvars:particle:minSpawnSize = 6
+                float primvars:particle:minTargetRotationSpeed = 0
+                float primvars:particle:minTargetSize = 0
+                float primvars:particle:minTimeToLive = 2
+                float primvars:particle:spawnRatePerSecond = 2000
+                float primvars:particle:turbulenceForce = 10
+                float primvars:particle:turbulenceFrequency = 10
+                bool primvars:particle:useSpawnTexcoords = 1
+                bool primvars:particle:useTurbulence = 0
+                custom uniform bool remix_category:particle_emitter = 0
+            }
+        }
+
+        over "mesh_87CD00B1C2840FBD"
+        {
+            over "mesh" (
+                prepend apiSchemas = ["ParticleSystemAPI"]
+            )
+            {
+                uniform token primvars:particle:billboardType = "FaceCamera_Position"
+                float primvars:particle:gravityForce = -10
+                bool primvars:particle:hideEmitter = 1
+                float primvars:particle:spawnRatePerSecond = 400
+            }
+        }
+
+        over "mesh_28E288FE6D1B2CEB"
+        {
+            over "mesh" (
+                prepend apiSchemas = ["ParticleSystemAPI"]
+            )
+            {
+                bool primvars:particle:alignParticlesToVelocity = 1
+                uniform token primvars:particle:billboardType = "FaceCamera_UpAxisLocked"
+                float primvars:particle:collisionRestitution = 0
+                float primvars:particle:collisionThickness = 0.001
+                bool primvars:particle:enableCollisionDetection = 1
+                bool primvars:particle:enableCollisionDetectionTLAS = 1
+                bool primvars:particle:enableMotionTrail = 1
+                float primvars:particle:gravityForce = -600
+                bool primvars:particle:hideEmitter = 1
+                float primvars:particle:initialVelocityConeAngleDegrees = 0
+                float primvars:particle:initialVelocityFromMotion = 0
+                float primvars:particle:initialVelocityFromNormal = 0
+                int primvars:particle:maxNumParticles = 30000
+                float primvars:particle:maxSpawnSize = 7
+                float primvars:particle:maxSpeed = 2000
+                float primvars:particle:maxTimeToLive = 4
+                float primvars:particle:minSpawnSize = 6
+                float primvars:particle:minTimeToLive = 3
+                float primvars:particle:motionTrailMultiplier = 1.6
+                float primvars:particle:spawnRatePerSecond = 5000
+            }
+        }
+
+        over "mesh_7EE8A758D19681A5"
+        {
+            def OmniGraph "DarkVisionColors"
+            {
+                token evaluationMode = "Automatic"
+                token evaluator:type = "component"
+                token fabricCacheBacking = "Shared"
+                int2 fileFormatVersion = (1, 9)
+                token pipelineStage = "pipelineStageSimulation"
+
+                def OmniGraphNode "mesh_hash_checker" (
+                    prepend apiSchemas = ["NodeGraphNodeAPI"]
+                )
+                {
+                    custom token inputs:meshHash = "0x7EE8A758D19681A5"
+                    token node:type = "lightspeed.trex.logic.MeshHashChecker"
+                    int node:typeVersion = 1
+                    custom bool outputs:isUsed
+                    custom float outputs:usageCount
+                    uniform token ui:nodegraph:node:expansionState = "open"
+                    uniform float2 ui:nodegraph:node:pos = (200.57027, 382.59293)
+                }
+
+                def OmniGraphNode "rtx_option_layer_action" (
+                    prepend apiSchemas = ["NodeGraphNodeAPI"]
+                )
+                {
+                    custom float inputs:blendStrength
+                    custom float inputs:blendThreshold = 0
+                    custom token inputs:configPath = "./layers/colorcorrect/darkvision.conf"
+                    custom bool inputs:enabled = 1
+                    prepend bool inputs:enabled.connect = </RootNode/meshes/mesh_7EE8A758D19681A5/DarkVisionColors/mesh_hash_checker.outputs:isUsed>
+                    custom float inputs:priority
+                    token node:type = "lightspeed.trex.logic.RtxOptionLayerAction"
+                    int node:typeVersion = 1
+                    uniform token ui:nodegraph:node:expansionState = "open"
+                    uniform float2 ui:nodegraph:node:pos = (521.2435, 416.75668)
+                }
+            }
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-12.820514, -12.820514, -12.820514), (12.820514, 12.820514, 12.820514)]
+                float inputs:intensity = 50
+                float inputs:radius = 6
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (5.7e-14, 0, 172)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+    }
+
+    over "Looks"
+    {
+        over "mat_6CAF7B0916E13428"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./wiltos/materials/models/cr_bonescatacomb/Skull_Bones_Albedo_lighter.a.rtex.dds@
+                custom asset inputs:normalmap_texture = @./wiltos/materials/models/cr_bonescatacomb/Skulls_Bones_Normaldx_OTH_Normal.n.rtex.dds@
+            }
+        }
+    }
+
+    over "instances"
+    {
+        over "inst_2CB53B0936CC9846_0"
+        {
+            over "mesh"
+            {
+                token visibility = "invisible"
+            }
+        }
+    }
+}
