@@ -7,6 +7,8 @@ wiltOS Dark Messiah Mod Launcher [Download](https://www.moddb.com/games/dark-mes
 
 wiltOS Dark Messiah Advanced SDK Base Module [Download](https://github.com/KingDavidW/DarkMessiah-AdvancedSDK-Mod-Files)
 
+Dark Messiah: RTX Lite Edition Content [Download](https://github.com/KingDavidW/DarkMessiah-RTX-Mod-Files/releases)
+
 ## How to Install
 First install the latest Mod Launcher
 
