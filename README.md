@@ -7,6 +7,8 @@ wiltOS Dark Messiah Mod Launcher [Download](https://www.moddb.com/games/dark-mes
 
 wiltOS Dark Messiah Advanced SDK Base Module [Download](https://github.com/KingDavidW/DarkMessiah-AdvancedSDK-Mod-Files)
 
+Dark Messiah: RTX Base Files (this repo) [Download](https://github.com/KingDavidW/DarkMessiah-RTX-Mod-Files/archive/refs/heads/main.zip)
+
 Dark Messiah: RTX Lite Edition Content [Download](https://github.com/KingDavidW/DarkMessiah-RTX-Mod-Files/releases)
 
 ## How to Install
@@ -14,9 +16,9 @@ First install the latest Mod Launcher
 
 Then, install the latest SDK Base into your _mods folder
 
-Finally drag and drop the files from this repository and put them into your Dark Messiah Might and Magic Singleplayer folder.
+Next, install the RTX Base Files into your Dark Messiah of Might and Magic folder (same as the mod launcher)
 
-The content is available in the RELEASES section. Content is extremely large, and is installed the same way as this!
+Finally install the Lite Edition content. The content is available in the RELEASES section. Content is extremely large, and is installed the same way as the Base files. Note that there will be patches available there for new content and it should be all applied in order of release.
 
 ## Mod Order Requirement
 Make the Advanced SDK the first mod in your list, above everything else.
